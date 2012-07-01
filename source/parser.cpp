@@ -45,7 +45,8 @@ void parser::parseLine(size_t lineOffset, size_t lineLength) {
     
     Tag t;
     t.indentation = indent;
-    t.lineContent = content.substr(lineOffset, lineLength);
+    
+    const StringPiece piece = StringPiece(contents.c_str() + lineOffset, lineLength);
     
     std::vector<std::string> names;
     bool hadMatch = false;
@@ -61,7 +62,7 @@ void parser::parseLine(size_t lineOffset, size_t lineLength) {
         fast_stack_malloc<StringPiece>(ngroups, [&](StringPiece* groups) {
             
             // Just match on the line itself, it's faster
-            if (!sym.regex().Match(lineContent, 0, lineLength, UNANCHORED, groups, ngroups)) {
+            if (!sym.regex().Match(piece, 0, lineLength, UNANCHORED, groups, ngroups)) {
                 shouldContinue = true;
                 return;
             }
@@ -88,6 +89,11 @@ void parser::parseLine(size_t lineOffset, size_t lineLength) {
         hadMatch = true;
         break;
     }
+    
+    if (!hadMatch)
+        return;
+    
+    t.lineContent = content.substr(lineOffset, lineLength);
     
     for (ScopePart part : scopeStack) {
         t.parents.append(part.name);

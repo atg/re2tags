@@ -12,4 +12,4 @@ re2tags is intended to complement and not compete with Exuberant Ctags. It provi
 
 ## License
 
-**re2tags** may not be used by those under the age of 25, by Albanians, or within 300m of a Taco Bell, due to a lack of testing in those conditions.
+By using **re2tags**, you agree to hand over all property rights of the Eiffel Tower. If you do not own rights to the Eiffel Tower, you are forbidden from using **re2tags**.

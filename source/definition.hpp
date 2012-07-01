@@ -12,12 +12,14 @@ struct SymbolDef {
     std::string sourceRegex;
     std::string scoped;
     
-    RE2 _regex;
+    RE2* _regex;
     
     RE2& regex() {
         if (_regex)
-            return _regex;
-        return _regex = cachedRegexForString(sourceRegex);
+            return *_regex;
+        
+        _regex = cachedRegexForString(sourceRegex);
+        return *_regex;
     }
 };
 struct Language {
