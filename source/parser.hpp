@@ -5,16 +5,21 @@
 
 namespace rtt {
     
+    struct ScopePart {
+        std::string name;
+        long indentation;
+    };
     struct Parser {
         
         Language language;
         std::string content;
         
         std::vector<Tag> tags;
+        std::deque<ScopePart> scopeStack;
         
         void parseFile();
         void parseLine(size_t lineOffset);
-
+        
         void produceTag(Tag t);
     };
 }
