@@ -28,6 +28,10 @@ for p in os.listdir('.'):
     jsonsource = subprocess.check_output(['_translate.rb', p])
     j = json.reads(jsonsource)
     
+    for symbol in j["symbols"]:
+        if "regex" in symbol and symbol["regex"]:
+            symbol["regex"] = normalizeRegex(symbol["regex"])
+    
     definitions[os.path.splitext(p)[0]] = j
 
 with open('compiled.json', 'w') as f:
