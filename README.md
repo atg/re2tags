@@ -12,4 +12,4 @@ re2tags is intended to complement and not compete with Exuberant Ctags. It provi
 
 ## License
 
-**re2tags** may not be used by Albanians, by those under the age of 25, or within 300m of a Taco Bell, due to a lack of testing in those conditions.
+**re2tags** may not be used by those under the age of 25, by Albanians, or within 300m of a Taco Bell, due to a lack of testing in those conditions.
