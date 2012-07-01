@@ -1,7 +1,7 @@
 #import "re2.h"
+#import "parser.hpp"
 
 namespace rtt {
-
 
 void parser::parseFile() {
     size_t len = content.size();
@@ -47,27 +47,27 @@ void parser::parseLine(size_t lineOffset, size_t lineLength) {
     t.indentation = indent;
     t.lineContent = content.substr(lineOffset, lineLength);
     
+    std::vector<std::string> names;
     bool hadMatch = false;
     for (SymbolDef sym : language.symbols) {
         // Check that the scope is specified
         if (sym.scoped.size()) {
-            if (scopeStack.back() != sym.scoped)
+            if (scopeStack.back().kind != sym.scoped)
                 continue;
         }
         
         bool shouldContinue = false;
-        int ngroups = sym.regex.NumberOfCapturingGroups();
-        std::vector<std::string> names;
+        int ngroups = sym.regex().NumberOfCapturingGroups();
         fast_stack_malloc<StringPiece>(ngroups, [&](StringPiece* groups) {
             
             // Just match on the line itself, it's faster
-            if (!sym.regex.Match(lineContent, sym.regex, 0, lineLength, UNANCHORED, groups, ngroups)) {
+            if (!sym.regex().Match(lineContent, 0, lineLength, UNANCHORED, groups, ngroups)) {
                 shouldContinue = true;
                 return;
             }
             
             // Does it have a "name" group ?
-            auto namedGroups = sym.regex.NamedCapturingGroups();
+            auto namedGroups = sym.regex().NamedCapturingGroups();
             if (namedGroups.count("name")) {
                 names.push_back(groups[namedGroups["name"]]);
             }
@@ -83,11 +83,23 @@ void parser::parseLine(size_t lineOffset, size_t lineLength) {
         if (shouldContinue || !names.size())
             continue;
         
+        t.kind = sym.kind;
+        
         hadMatch = true;
         break;
     }
     
-    produceTag(t);
+    for (ScopePart part : scopeStack) {
+        t.parents.append(part.name);
+        t.parents.append("::");
+        t.kindPath.append(part.kind);
+        t.kindPath.append("::");
+    }
+    
+    for (std::string name : names) {
+        t.name = name;
+        produceTag(t);
+    }
 }
 
 }
