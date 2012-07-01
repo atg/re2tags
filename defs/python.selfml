@@ -1,0 +1,6 @@
+(ext py)
+
+(symbol class [class {{IDENT}}])
+(symbol class_property [{{IDENTS}} =] (scope class))
+(symbol method [def {{IDENT}}] (scope class))
+(symbol function [def {{IDENT}}])

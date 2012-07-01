@@ -1,0 +1,7 @@
+(ext rb)
+
+(symbol property [attr_(?:writer|reader|accessor) \:{{IDENT}}])
+(symbol namespace [module {{IDENT}}])
+(symbol class [class {{IDENT}}])
+(symbol method [def {{IDENT}}] (scope class))
+(symbol function [def {{IDENT}}])
