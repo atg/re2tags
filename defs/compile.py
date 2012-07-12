@@ -1,6 +1,7 @@
 import json
 import os
 import subprocess
+from ConfigParser import RawConfigParser
 
 def normalizeRegex(r):
     r.replace('IDENTS', r'(?:[a-zA-Z_][a-zA-Z0-9]*(?:\s*,\s*[a-zA-Z_][a-zA-Z0-9]*)*)')
@@ -22,10 +23,15 @@ os.chdir(root)
 
 definitions = {}
 for p in os.listdir('.'):
-    if os.path.splitext(p)[1] != 'selfml':
+    if os.path.splitext(p)[1] != 'ini':
         continue
     
-    jsonsource = subprocess.check_output(['_translate.rb', p])
+    with open(p, 'r') as f:
+        inicontents = f.read()
+        print inicontents
+        
+    
+    #jsonsource = subprocess.check_output(['_translate.rb', p])
     j = json.reads(jsonsource)
     
     for symbol in j["symbols"]:
