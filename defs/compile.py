@@ -9,10 +9,10 @@ def normalizeRegex(r):
     r.replace('{{', '(?P<names>')
     r.replace('}}', ')')
     
-    r.replace(' +', '[ \t]+')
-    r.replace(' ?', '[ \t]?')
-    r.replace(' *', '[ \t]*')
-    r.replace(' ', r'[ \t]+')
+    r.replace(' +', r'[ \t]+')
+    r.replace(' ?', r'[ \t]?')
+    r.replace(' *', r'[ \t]*')
+    r.replace(' ',  r'[ \t]+')
     
     if not r.startswith('^'):
         r = r'^\s*' + r

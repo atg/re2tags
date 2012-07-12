@@ -1,3 +1,19 @@
 (ext css)
 
 (symbol misc [(?P<name>[^{}]+)\s*{])
+
+{
+    "ext": ["css"],
+
+    "symbols": [
+        ["misc", "(?P<name>[^{}]+)\\s*{"]
+    ]
+}
+
+
+
+[language]
+exts= css
+
+[misc]
+regex= (?P<name>[^{}]+)\s*{

@@ -1,6 +1,27 @@
 (ext py)
 
 (symbol class [class {{IDENT}}])
-(symbol class_property [{{IDENTS}} =] (scope class))
-(symbol method [def {{IDENT}}] (scope class))
-(symbol function [def {{IDENT}}])
+(symbol class_property [{{IDENTS}} =
+] (scope class))
+(symbol method [def {{IDENT}}
+] (scope class))
+(symbol function [def {{IDENT}}
+])
+
+[language]
+exts= py
+
+[class]
+regex= class {{IDENT}}
+
+[class_property]
+regex= {{IDENTS}} =
+scope= class
+
+[method]
+regex= def {{IDENT}}
+scope= class
+
+[function]
+regex= def {{IDENT}}
+
