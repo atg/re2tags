@@ -1,11 +1,11 @@
 #import <string>
 #import <vector>
 #import "re2.h"
-#import "jsoncpp.h"
+#import "json.h"
 
 namespace rtt {
     
-RE2& cachedRegexForString(std::string str);
+RE2* cachedRegexForString(std::string str);
 
 struct SymbolDef {
     std::string kind;

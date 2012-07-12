@@ -1,13 +1,14 @@
 #import "re2.h"
 #import "parser.hpp"
+#import "utils.hpp"
 
 namespace rtt {
 
-void parser::parseFile() {
+void Parser::parseFile() {
     size_t len = content.size();
     size_t lastLineStart = 0;
     size_t lastLineLength = 0;
-    for (size_t i = lineOffset; i < len; i++) {
+    for (size_t i = 0; i < len; i++) {
         char c = content[i];
         
         if (c == '\0')
@@ -25,7 +26,7 @@ void parser::parseFile() {
         }
     }
 }
-void parser::parseLine(size_t lineOffset, size_t lineLength) {
+void Parser::parseLine(size_t lineOffset, size_t lineLength) {
     
     if (!lineLength)
         return;
@@ -46,11 +47,11 @@ void parser::parseLine(size_t lineOffset, size_t lineLength) {
     Tag t;
     t.indentation = indent;
     
-    const StringPiece piece = StringPiece(contents.c_str() + lineOffset, lineLength);
+    const re2::StringPiece piece = re2::StringPiece(content.c_str() + lineOffset, lineLength);
     
     std::vector<std::string> names;
     bool hadMatch = false;
-    for (SymbolDef sym : language.symbols) {
+    for (__block SymbolDef sym : language.symbols) {
         // Check that the scope is specified
         if (sym.scoped.size()) {
             if (scopeStack.back().kind != sym.scoped)
@@ -58,11 +59,14 @@ void parser::parseLine(size_t lineOffset, size_t lineLength) {
         }
         
         bool shouldContinue = false;
+//        __block Parser& me = *this;
         int ngroups = sym.regex().NumberOfCapturingGroups();
-        fast_stack_malloc<StringPiece>(ngroups, [&](StringPiece* groups) {
+        
+        fast_stack_malloc<re2::StringPiece>(ngroups, //^ void (re2::StringPiece* groups) {//
+            [&](re2::StringPiece* groups) {
             
             // Just match on the line itself, it's faster
-            if (!sym.regex().Match(piece, 0, lineLength, UNANCHORED, groups, ngroups)) {
+            if (!sym.regex().Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
                 shouldContinue = true;
                 return;
             }

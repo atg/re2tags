@@ -20,7 +20,7 @@ struct Parser {
     std::deque<ScopePart> scopeStack;
     
     void parseFile();
-    void parseLine(size_t lineOffset);
+    void parseLine(size_t lineOffset, size_t lineLength);
     
     void produceTag(Tag t);
 };

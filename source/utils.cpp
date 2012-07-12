@@ -1,4 +1,8 @@
+#import "utils.hpp"
+
 template<typename T>
+// Clang doesn't seem to support std::function yet, so use clang blocks instead
+//void fast_stack_malloc(const size_t n, void(^f)(T*)) {
 void fast_stack_malloc(const size_t n, std::function<void(T*)> f) {
 
     // 128 bytes is a reasonable amount to allocate on the stack
@@ -17,8 +21,8 @@ void fast_stack_malloc(const size_t n, std::function<void(T*)> f) {
     else {
         // Too big! Put it on the heap
         T* const p = new T[n]; 
-        f(p)
-        delete T[];
+        f(p);
+        delete[] p;
     }
 }
 
