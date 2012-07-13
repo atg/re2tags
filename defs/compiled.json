@@ -18,31 +18,31 @@
         "symbols": [
             {
                 "kind": "class", 
-                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "kind": "interface", 
-                "regex": "^\\s*interface[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*interface[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "kind": "class_variable", 
-                "regex": "^\\s*(?:[^\\n]*[ \\t]+)?static[ \\t]+[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9]*)*))[[ \\t]+\\t]*[;=]", 
+                "regex": "^\\s*(?:[^\\n]*[ \\t]+)?static[ \\t]+[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9_]*)*))[[ \\t]+\\t]*[;=]", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "instance_variable", 
-                "regex": "^\\s*[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9]*)*))[[ \\t]+\\t]*[;=]", 
+                "regex": "^\\s*[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9_]*)*))[[ \\t]+\\t]*[;=]", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "method", 
-                "regex": "^\\s*[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))[[ \\t]+\\t]*(", 
+                "regex": "^\\s*[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*(", 
                 "scope": [
                     "class", 
                     "interface"
@@ -58,40 +58,40 @@
         "symbols": [
             {
                 "kind": "class", 
-                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "kind": "constant", 
-                "regex": "^\\s*(?:[^\\n]*[ \\t]+)?const[ \\t]+[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9]*)*))[[ \\t]+\\t]*[;=]", 
+                "regex": "^\\s*(?:[^\\n]*[ \\t]+)?const[ \\t]+[^\\n]+[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9_]*)*))[[ \\t]+\\t]*[;=]", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "class_variable", 
-                "regex": "^\\s*(?:[^\\n]*[ \\t]+)?static[ \\t]+[^\\n]+[ \\t]+(?P<names>$(?:[a-zA-Z_][a-zA-Z0-9]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9]*)*))[[ \\t]+\\t]*[;=]", 
+                "regex": "^\\s*(?:[^\\n]*[ \\t]+)?static[ \\t]+[^\\n]+[ \\t]+(?P<names>$(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9_]*)*))[[ \\t]+\\t]*[;=]", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "instance_variable", 
-                "regex": "^\\s*[^\\n]+[ \\t]+(?P<names>$(?:[a-zA-Z_][a-zA-Z0-9]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9]*)*))[[ \\t]+\\t]*[;=]", 
+                "regex": "^\\s*[^\\n]+[ \\t]+(?P<names>$(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9_]*)*))[[ \\t]+\\t]*[;=]", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "method", 
-                "regex": "^\\s*function[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))[[ \\t]+\\t]*(", 
+                "regex": "^\\s*function[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*(", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "function", 
-                "regex": "^\\s*function[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))[[ \\t]+\\t]*(", 
+                "regex": "^\\s*function[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*(", 
                 "scope": []
             }
         ]
@@ -103,26 +103,26 @@
         "symbols": [
             {
                 "kind": "class", 
-                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "kind": "class_property", 
-                "regex": "^\\s*(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9]*)*))[ \\t]+=", 
+                "regex": "^\\s*(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\\s*,\\s*[a-zA-Z_][a-zA-Z0-9_]*)*))[ \\t]+=", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "method", 
-                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "function", 
-                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }
         ]
@@ -134,29 +134,29 @@
         "symbols": [
             {
                 "kind": "property", 
-                "regex": "^\\s*attr_(?:writer|reader|accessor)[ \\t]+\\:(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*attr_(?:writer|reader|accessor)[ \\t]+\\:(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "kind": "namespace", 
-                "regex": "^\\s*module[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*module[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "kind": "class", 
-                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "kind": "method", 
-                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": [
                     "class"
                 ]
             }, 
             {
                 "kind": "function", 
-                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9]*))", 
+                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }
         ]

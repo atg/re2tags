@@ -4,8 +4,8 @@ from ConfigParser import RawConfigParser
 import io
 
 def normalizeRegex(r):
-    r = r.replace('IDENTS', r'(?:[a-zA-Z_][a-zA-Z0-9]*(?:\s*,\s*[a-zA-Z_][a-zA-Z0-9]*)*)')
-    r = r.replace('IDENT', r'(?:[a-zA-Z_][a-zA-Z0-9]*)')
+    r = r.replace('IDENTS', r'(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\s*,\s*[a-zA-Z_][a-zA-Z0-9_]*)*)')
+    r = r.replace('IDENT', r'(?:[a-zA-Z_][a-zA-Z0-9_]*)')
     
     r = r.replace('{{', '(?P<names>')
     r = r.replace('}}', ')')

@@ -69,23 +69,18 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
         }
 
         bool shouldContinue = false;
-//        continue;
         RE2 r(sym.sourceRegex);
         int ngroups = r.NumberOfCapturingGroups() + 1;
 
 //        fast_stack_malloc<re2::StringPiece>(ngroups, //^ void (re2::StringPiece* groups) {//
 //            [&](re2::StringPiece* groups) {
-        re2::StringPiece* groups = new re2::StringPiece[ngroups + 100];
+        re2::StringPiece* groups = new re2::StringPiece[ngroups];
         
             // Just match on the line itself, it's faster
             if (!r.Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
-                printf("-- NO MATCH -- \n");
-//                shouldContinue = true;
-//                return;
-//                delete[] groups;
+                delete[] groups;
                 continue;
             }
-            printf("-- MATCH -- \n");
         
             // Does it have a "name" group ?
             const std::map<std::string, int>& namedGroups = r.NamedCapturingGroups();
@@ -94,35 +89,19 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
                 names.push_back(groups[groupidx].as_string());
             }
             else if (namedGroups.count("names")) {
-//                printf("data() / size() = %ld\n", groups[namedGroups["name"]].size());
-//                int groupnum = namedGroups["names"];
-//                re2::StringPiece& sp = groups[groupnum];
-//                for (int i = 0; i < groups[namedGroups["names"]].size(); i++) {
-//                    printf("%c", groups[namedGroups["names"]].data()[i]);
-//                }
-//                printf("\n");
                 int groupidx = namedGroups.find("names")->second;
-//                printf("---- %d\n", groupidx);
                 std::string namesstring = groups[groupidx].as_string();
-//                std::string namesstring("ABC");//(groups[namedGroups["names"]].data(), groups[namedGroups["names"]].size());
                 
-                
-//                std::string namesstring = groups[namedGroups["names"]].as_string();
-//                printf("namesstring = [%s]\n", namesstring.c_str());
-//                names.push_back(namesstring);
                 split_and_trim_into(namesstring, std::string(","), names);
             }
             else {
-//                shouldContinue = true;
-//                return;
-//                delete[] groups;
+                delete[] groups;
                 continue;
 
             }
 //        });
-//        delete[] groups;
+        delete[] groups;
         
-        printf("names . size = %d\n", names.size());
         if (shouldContinue || !names.size())
             continue;
         
