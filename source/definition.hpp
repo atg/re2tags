@@ -15,20 +15,19 @@ struct SymbolDef {
     std::string sourceRegex;
     std::vector<std::string> scoped;
     
-//    RE2* _regex;
+    RE2* _regex;
     
     public:
-    SymbolDef(std::string k, std::string src, std::vector<std::string> scp) : kind(k), sourceRegex(src), scoped(scp) /*, _regex(0) */ {
+    SymbolDef(std::string k, std::string src, std::vector<std::string> scp) : kind(k), sourceRegex(src), scoped(scp), _regex(0) {
 //        regex();
     }
-    /*
+    
     RE2* regex() {
-        return new RE2(sourceRegex);
         if (_regex)
             return _regex;
         return _regex = new RE2(sourceRegex);
     }
-    */
+    
     void debug() {
         printf("    SYMBOL: [%s] %s\n", kind.c_str(), sourceRegex.c_str());
     }

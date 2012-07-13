@@ -343,6 +343,7 @@
 		752203C915AF598300F831F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				HEADER_SEARCH_PATHS = (
 					../dependencies/re2,
 					../dependencies/re2/re2,
@@ -362,6 +363,7 @@
 		752203CA15AF598300F831F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				HEADER_SEARCH_PATHS = (
 					../dependencies/re2,
 					../dependencies/re2/re2,

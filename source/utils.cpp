@@ -1,8 +1,9 @@
 #import "utils.hpp"
-/*
+
 template<typename T>
+void fast_stack_malloc(const size_t n, void(^f)(T*)) {
 // Clang crashes on std::function, so until then we use macros
-void fast_stack_malloc(const size_t n, std::function<void(T*)> f) {
+//void fast_stack_malloc(const size_t n, std::function<void(T*)> f) {
     
     // 128 bytes is a reasonable amount to allocate on the stack
     const size_t bytes = sizeof(T) * n;
@@ -23,8 +24,8 @@ void fast_stack_malloc(const size_t n, std::function<void(T*)> f) {
         f(p);
         delete[] p;
     }
-}*/
-/*
+}
+
 #define fast_stack_malloc(T, n, b) do { \
 const size_t bytes = sizeof(T) * n; \
 if (bytes <= 128) { \
@@ -35,11 +36,11 @@ for (size_t i = 0; i < n; i++) { p[i].~T(); } \
 } \
 else { \
 T* const p = new T[n]; \
-f(p); \
+b \
 delete[] p; \
 } \
 } while(0)
-*/
+
 
 bool string_ends_with(std::string &haystack, std::string &needle) {
     if (haystack.length() < needle.length())

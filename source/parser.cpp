@@ -4,6 +4,43 @@
 
 namespace rtt {
 
+    
+    static void regexCallback(re2::StringPiece* groups, long ngroups, const re2::StringPiece& piece, long lineLength, bool& shouldContinue, SymbolDef& sym, std::vector<std::string>& names) {
+        
+        //            [&](re2::StringPiece* groups) {
+        //        re2::StringPiece* groups = new re2::StringPiece[ngroups];
+        
+        // Just match on the line itself, it's faster
+        if (!sym.regex()->Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
+            //                delete[] groups;
+            //                continue;
+            shouldContinue = true;
+            return;
+        }
+        
+        // Does it have a "name" group ?
+        const std::map<std::string, int>& namedGroups = sym.regex()->NamedCapturingGroups();
+        if (namedGroups.count("name")) {
+            int groupidx = namedGroups.find("name")->second;
+            names.push_back(groups[groupidx].as_string());
+        }
+        else if (namedGroups.count("names")) {
+            int groupidx = namedGroups.find("names")->second;
+            std::string namesstring = groups[groupidx].as_string();
+            
+            split_and_trim_into(namesstring, std::string(","), names);
+        }
+        else {
+            //                delete[] groups;
+            //                continue;
+            shouldContinue = true;
+            return;
+            
+        }
+        //        });
+        //        delete[] groups;
+    }
+    
 void Parser::parseFile() {
 
     size_t len = content.size();
@@ -50,9 +87,9 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
     
     const re2::StringPiece piece = re2::StringPiece(content.c_str() + lineOffset, lineLength);
     
-    std::vector<std::string> names;
+    __block std::vector<std::string> names;
     bool hadMatch = false;
-    for (SymbolDef sym : language.symbols) {
+    for (__block SymbolDef& sym : language.symbols) {
         // Check that the scope is specified
         if (sym.scoped.size()) {
             bool foundMatchingScope = false;
@@ -68,39 +105,34 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
                 continue;
         }
 
-        bool shouldContinue = false;
-        RE2 r(sym.sourceRegex);
-        int ngroups = r.NumberOfCapturingGroups() + 1;
-
-//        fast_stack_malloc<re2::StringPiece>(ngroups, //^ void (re2::StringPiece* groups) {//
-//            [&](re2::StringPiece* groups) {
-        re2::StringPiece* groups = new re2::StringPiece[ngroups];
+        __block bool shouldContinue = false;
+//        RE2 r(sym.sourceRegex);
+        int ngroups = sym.regex()->NumberOfCapturingGroups() + 1;
         
-            // Just match on the line itself, it's faster
-            if (!r.Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
-                delete[] groups;
-                continue;
-            }
         
-            // Does it have a "name" group ?
-            const std::map<std::string, int>& namedGroups = r.NamedCapturingGroups();
-            if (namedGroups.count("name")) {
-                int groupidx = namedGroups.find("name")->second;
-                names.push_back(groups[groupidx].as_string());
-            }
-            else if (namedGroups.count("names")) {
-                int groupidx = namedGroups.find("names")->second;
-                std::string namesstring = groups[groupidx].as_string();
-                
-                split_and_trim_into(namesstring, std::string(","), names);
-            }
-            else {
-                delete[] groups;
-                continue;
-
-            }
-//        });
-        delete[] groups;
+        // 128 bytes is a reasonable amount to allocate on the stack
+        const size_t bytes = sizeof(re2::StringPiece) * ngroups;
+        if (bytes <= 128) {
+            
+            re2::StringPiece* p0 = (re2::StringPiece*)alloca(bytes);
+            re2::StringPiece* p = new (p0) re2::StringPiece[ngroups];
+            
+            
+            regexCallback(p, ngroups, piece, lineLength, shouldContinue, sym, names);
+            
+            for (size_t i = 0; i < ngroups; i++) {
+                p[i].~StringPiece();
+            } 
+        }
+        else {
+            // Too big! Put it on the heap
+            re2::StringPiece* p = new re2::StringPiece[ngroups]; 
+            regexCallback(p, ngroups, piece, lineLength, shouldContinue, sym, names);
+            delete[] p;
+        }
+//        fast_stack_malloc<re2::StringPiece>(ngroups, );
+        
+        
         
         if (shouldContinue || !names.size())
             continue;
@@ -128,6 +160,7 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
         produceTag(t);
     }
 }
+
     
 void Parser::produceTag(Tag t) {
     tags.push_back(t);
