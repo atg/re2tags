@@ -53,7 +53,7 @@ for p in os.listdir('.'):
     
     definitions[os.path.splitext(p)[0]] = j
 
-minified = True
+minified = False
 with open('compiled.json', 'w') as f:
     if minified:
         f.write(json.dumps(definitions, separators=(',',':')))

@@ -5,7 +5,6 @@
 namespace rtt {
 
 void Parser::parseFile() {
-//    RE2 r3("abcbawiudj");
 
     size_t len = content.size();
     size_t lastLineStart = 0;
@@ -53,15 +52,8 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
     
     std::vector<std::string> names;
     bool hadMatch = false;
-//    const re2::StringPiece piece2("abc");
-
-//    printf("LANG: /%ul/\n", (void*)&language);
-    printf("LANGNAME: /%s/\n", language.name.c_str());
-//    language.debug();
     for (SymbolDef sym : language.symbols) {
         // Check that the scope is specified
-//        printf("sym.scoped = %lu\n", *(unsigned long*)&(sym.scoped));
-//        sym.debug();
         if (sym.scoped.size()) {
             bool foundMatchingScope = false;
             if (scopeStack.size()) {
@@ -77,50 +69,60 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
         }
 
         bool shouldContinue = false;
-//        __block Parser& me = *this;
-//        std::string sourcestring = sym.sourceRegex;
-//        const re2::StringPiece piece("abc");
-//        RE2 r2(piece2);
-        int ngroups = 0;//.NumberOfCapturingGroups();
-//        int ngroups = sym.regex()->NumberOfCapturingGroups();
-//        sym.debug();
 //        continue;
+        RE2 r(sym.sourceRegex);
+        int ngroups = r.NumberOfCapturingGroups() + 1;
 
 //        fast_stack_malloc<re2::StringPiece>(ngroups, //^ void (re2::StringPiece* groups) {//
 //            [&](re2::StringPiece* groups) {
-        re2::StringPiece* groups = new re2::StringPiece[ngroups];
-//        std::string copystring(sym.sourceRegex.c_str());
-//        RE2 rxx(copystring);
-//        sym.debug();
-//        continue;
+        re2::StringPiece* groups = new re2::StringPiece[ngroups + 100];
+        
             // Just match on the line itself, it's faster
-            if (!sym.regex()->Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
+            if (!r.Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
+                printf("-- NO MATCH -- \n");
 //                shouldContinue = true;
 //                return;
-                delete[] groups;
+//                delete[] groups;
                 continue;
             }
-        printf("NEXT WILL BE SECOND SYMBOL\n");
-        sym.debug();
+            printf("-- MATCH -- \n");
+        
             // Does it have a "name" group ?
-            auto namedGroups = sym.regex()->NamedCapturingGroups();
+            const std::map<std::string, int>& namedGroups = r.NamedCapturingGroups();
             if (namedGroups.count("name")) {
-                names.push_back(groups[namedGroups["name"]].as_string());
+                int groupidx = namedGroups.find("name")->second;
+                names.push_back(groups[groupidx].as_string());
             }
             else if (namedGroups.count("names")) {
-                std::string namesstring = "ABC";//groups[namedGroups["names"]].as_string();
+//                printf("data() / size() = %ld\n", groups[namedGroups["name"]].size());
+//                int groupnum = namedGroups["names"];
+//                re2::StringPiece& sp = groups[groupnum];
+//                for (int i = 0; i < groups[namedGroups["names"]].size(); i++) {
+//                    printf("%c", groups[namedGroups["names"]].data()[i]);
+//                }
+//                printf("\n");
+                int groupidx = namedGroups.find("names")->second;
+//                printf("---- %d\n", groupidx);
+                std::string namesstring = groups[groupidx].as_string();
+//                std::string namesstring("ABC");//(groups[namedGroups["names"]].data(), groups[namedGroups["names"]].size());
+                
+                
+//                std::string namesstring = groups[namedGroups["names"]].as_string();
+//                printf("namesstring = [%s]\n", namesstring.c_str());
+//                names.push_back(namesstring);
                 split_and_trim_into(namesstring, std::string(","), names);
             }
             else {
 //                shouldContinue = true;
 //                return;
-                delete[] groups;
+//                delete[] groups;
                 continue;
 
             }
 //        });
-        delete[] groups;
+//        delete[] groups;
         
+        printf("names . size = %d\n", names.size());
         if (shouldContinue || !names.size())
             continue;
         

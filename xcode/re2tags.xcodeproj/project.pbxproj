@@ -11,11 +11,36 @@
 		752203DA15AF59F900F831F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752203D315AF59BC00F831F7 /* main.cpp */; };
 		752203DB15AF59F900F831F7 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752203D415AF59BC00F831F7 /* parser.cpp */; };
 		752203DC15AF59F900F831F7 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752203D715AF59BC00F831F7 /* utils.cpp */; };
-		752203DE15AF5AF700F831F7 /* libre2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 752203DD15AF5AF700F831F7 /* libre2.a */; };
 		7522042715AF70CB00F831F7 /* re2tags.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042615AF70CB00F831F7 /* re2tags.cpp */; };
 		7522042C15AF8B5A00F831F7 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042915AF8B5A00F831F7 /* json_reader.cpp */; };
 		7522042D15AF8B5A00F831F7 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042A15AF8B5A00F831F7 /* json_value.cpp */; };
 		7522042E15AF8B5A00F831F7 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042B15AF8B5A00F831F7 /* json_writer.cpp */; };
+		7522044C15B04F1E00F831F7 /* bitstate.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522043915B04F1D00F831F7 /* bitstate.cc */; };
+		7522044D15B04F1E00F831F7 /* compile.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522043A15B04F1D00F831F7 /* compile.cc */; };
+		7522044E15B04F1E00F831F7 /* dfa.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522043B15B04F1D00F831F7 /* dfa.cc */; };
+		7522044F15B04F1E00F831F7 /* filtered_re2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522043C15B04F1D00F831F7 /* filtered_re2.cc */; };
+		7522045015B04F1E00F831F7 /* mimics_pcre.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522043D15B04F1D00F831F7 /* mimics_pcre.cc */; };
+		7522045115B04F1E00F831F7 /* nfa.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522043E15B04F1D00F831F7 /* nfa.cc */; };
+		7522045215B04F1E00F831F7 /* onepass.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522043F15B04F1D00F831F7 /* onepass.cc */; };
+		7522045315B04F1E00F831F7 /* parse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044015B04F1D00F831F7 /* parse.cc */; };
+		7522045415B04F1E00F831F7 /* perl_groups.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044115B04F1D00F831F7 /* perl_groups.cc */; };
+		7522045515B04F1E00F831F7 /* prefilter_tree.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044215B04F1D00F831F7 /* prefilter_tree.cc */; };
+		7522045615B04F1E00F831F7 /* prefilter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044315B04F1D00F831F7 /* prefilter.cc */; };
+		7522045715B04F1E00F831F7 /* prog.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044415B04F1D00F831F7 /* prog.cc */; };
+		7522045815B04F1E00F831F7 /* re2.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044515B04F1E00F831F7 /* re2.cc */; };
+		7522045915B04F1E00F831F7 /* regexp.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044615B04F1E00F831F7 /* regexp.cc */; };
+		7522045A15B04F1E00F831F7 /* set.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044715B04F1E00F831F7 /* set.cc */; };
+		7522045B15B04F1E00F831F7 /* simplify.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044815B04F1E00F831F7 /* simplify.cc */; };
+		7522045C15B04F1E00F831F7 /* tostring.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044915B04F1E00F831F7 /* tostring.cc */; };
+		7522045D15B04F1E00F831F7 /* unicode_casefold.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044A15B04F1E00F831F7 /* unicode_casefold.cc */; };
+		7522045E15B04F1E00F831F7 /* unicode_groups.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522044B15B04F1E00F831F7 /* unicode_groups.cc */; };
+		7522046615B0597F00F831F7 /* arena.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522045F15B0597E00F831F7 /* arena.cc */; };
+		7522046715B0597F00F831F7 /* hash.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522046015B0597F00F831F7 /* hash.cc */; };
+		7522046815B0597F00F831F7 /* rune.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522046115B0597F00F831F7 /* rune.cc */; };
+		7522046915B0597F00F831F7 /* stringpiece.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522046215B0597F00F831F7 /* stringpiece.cc */; };
+		7522046A15B0597F00F831F7 /* stringprintf.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522046315B0597F00F831F7 /* stringprintf.cc */; };
+		7522046B15B0597F00F831F7 /* strutil.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522046415B0597F00F831F7 /* strutil.cc */; };
+		7522046C15B0597F00F831F7 /* valgrind.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7522046515B0597F00F831F7 /* valgrind.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +65,6 @@
 		752203D615AF59BC00F831F7 /* tag.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tag.hpp; sourceTree = "<group>"; };
 		752203D715AF59BC00F831F7 /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
 		752203D815AF59BC00F831F7 /* utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
-		752203DD15AF5AF700F831F7 /* libre2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libre2.a; path = ../dependencies/re2/obj/libre2.a; sourceTree = "<group>"; };
 		752203E415AF5B1600F831F7 /* filtered_re2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filtered_re2.h; sourceTree = "<group>"; };
 		752203EF15AF5B1600F831F7 /* prefilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefilter.h; sourceTree = "<group>"; };
 		752203F115AF5B1600F831F7 /* prefilter_tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefilter_tree.h; sourceTree = "<group>"; };
@@ -58,6 +82,32 @@
 		7522042915AF8B5A00F831F7 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_reader.cpp; path = "../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp"; sourceTree = "<group>"; };
 		7522042A15AF8B5A00F831F7 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_value.cpp; path = "../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp"; sourceTree = "<group>"; };
 		7522042B15AF8B5A00F831F7 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_writer.cpp; path = "../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp"; sourceTree = "<group>"; };
+		7522043915B04F1D00F831F7 /* bitstate.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitstate.cc; sourceTree = "<group>"; };
+		7522043A15B04F1D00F831F7 /* compile.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compile.cc; sourceTree = "<group>"; };
+		7522043B15B04F1D00F831F7 /* dfa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dfa.cc; sourceTree = "<group>"; };
+		7522043C15B04F1D00F831F7 /* filtered_re2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filtered_re2.cc; sourceTree = "<group>"; };
+		7522043D15B04F1D00F831F7 /* mimics_pcre.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mimics_pcre.cc; sourceTree = "<group>"; };
+		7522043E15B04F1D00F831F7 /* nfa.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = nfa.cc; sourceTree = "<group>"; };
+		7522043F15B04F1D00F831F7 /* onepass.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = onepass.cc; sourceTree = "<group>"; };
+		7522044015B04F1D00F831F7 /* parse.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parse.cc; sourceTree = "<group>"; };
+		7522044115B04F1D00F831F7 /* perl_groups.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = perl_groups.cc; sourceTree = "<group>"; };
+		7522044215B04F1D00F831F7 /* prefilter_tree.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prefilter_tree.cc; sourceTree = "<group>"; };
+		7522044315B04F1D00F831F7 /* prefilter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prefilter.cc; sourceTree = "<group>"; };
+		7522044415B04F1D00F831F7 /* prog.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = prog.cc; sourceTree = "<group>"; };
+		7522044515B04F1E00F831F7 /* re2.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = re2.cc; sourceTree = "<group>"; };
+		7522044615B04F1E00F831F7 /* regexp.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regexp.cc; sourceTree = "<group>"; };
+		7522044715B04F1E00F831F7 /* set.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = set.cc; sourceTree = "<group>"; };
+		7522044815B04F1E00F831F7 /* simplify.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simplify.cc; sourceTree = "<group>"; };
+		7522044915B04F1E00F831F7 /* tostring.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tostring.cc; sourceTree = "<group>"; };
+		7522044A15B04F1E00F831F7 /* unicode_casefold.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unicode_casefold.cc; sourceTree = "<group>"; };
+		7522044B15B04F1E00F831F7 /* unicode_groups.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unicode_groups.cc; sourceTree = "<group>"; };
+		7522045F15B0597E00F831F7 /* arena.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = arena.cc; path = ../dependencies/re2/util/arena.cc; sourceTree = "<group>"; };
+		7522046015B0597F00F831F7 /* hash.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hash.cc; path = ../dependencies/re2/util/hash.cc; sourceTree = "<group>"; };
+		7522046115B0597F00F831F7 /* rune.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rune.cc; path = ../dependencies/re2/util/rune.cc; sourceTree = "<group>"; };
+		7522046215B0597F00F831F7 /* stringpiece.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stringpiece.cc; path = ../dependencies/re2/util/stringpiece.cc; sourceTree = "<group>"; };
+		7522046315B0597F00F831F7 /* stringprintf.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stringprintf.cc; path = ../dependencies/re2/util/stringprintf.cc; sourceTree = "<group>"; };
+		7522046415B0597F00F831F7 /* strutil.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = strutil.cc; path = ../dependencies/re2/util/strutil.cc; sourceTree = "<group>"; };
+		7522046515B0597F00F831F7 /* valgrind.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = valgrind.cc; path = ../dependencies/re2/util/valgrind.cc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +115,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				752203DE15AF5AF700F831F7 /* libre2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +124,16 @@
 		752203B315AF598200F831F7 = {
 			isa = PBXGroup;
 			children = (
-				752203DD15AF5AF700F831F7 /* libre2.a */,
 				7522042915AF8B5A00F831F7 /* json_reader.cpp */,
 				7522042A15AF8B5A00F831F7 /* json_value.cpp */,
 				7522042B15AF8B5A00F831F7 /* json_writer.cpp */,
+				7522045F15B0597E00F831F7 /* arena.cc */,
+				7522046015B0597F00F831F7 /* hash.cc */,
+				7522046115B0597F00F831F7 /* rune.cc */,
+				7522046215B0597F00F831F7 /* stringpiece.cc */,
+				7522046315B0597F00F831F7 /* stringprintf.cc */,
+				7522046415B0597F00F831F7 /* strutil.cc */,
+				7522046515B0597F00F831F7 /* valgrind.cc */,
 				752203DF15AF5B1600F831F7 /* re2 */,
 				752203D015AF59BC00F831F7 /* source */,
 				752203BF15AF598300F831F7 /* Products */,
@@ -114,6 +169,25 @@
 		752203DF15AF5B1600F831F7 /* re2 */ = {
 			isa = PBXGroup;
 			children = (
+				7522043915B04F1D00F831F7 /* bitstate.cc */,
+				7522043A15B04F1D00F831F7 /* compile.cc */,
+				7522043B15B04F1D00F831F7 /* dfa.cc */,
+				7522043C15B04F1D00F831F7 /* filtered_re2.cc */,
+				7522043D15B04F1D00F831F7 /* mimics_pcre.cc */,
+				7522043E15B04F1D00F831F7 /* nfa.cc */,
+				7522043F15B04F1D00F831F7 /* onepass.cc */,
+				7522044015B04F1D00F831F7 /* parse.cc */,
+				7522044115B04F1D00F831F7 /* perl_groups.cc */,
+				7522044215B04F1D00F831F7 /* prefilter_tree.cc */,
+				7522044315B04F1D00F831F7 /* prefilter.cc */,
+				7522044415B04F1D00F831F7 /* prog.cc */,
+				7522044515B04F1E00F831F7 /* re2.cc */,
+				7522044615B04F1E00F831F7 /* regexp.cc */,
+				7522044715B04F1E00F831F7 /* set.cc */,
+				7522044815B04F1E00F831F7 /* simplify.cc */,
+				7522044915B04F1E00F831F7 /* tostring.cc */,
+				7522044A15B04F1E00F831F7 /* unicode_casefold.cc */,
+				7522044B15B04F1E00F831F7 /* unicode_groups.cc */,
 				752203E415AF5B1600F831F7 /* filtered_re2.h */,
 				752203EF15AF5B1600F831F7 /* prefilter.h */,
 				752203F115AF5B1600F831F7 /* prefilter_tree.h */,
@@ -189,6 +263,32 @@
 				7522042C15AF8B5A00F831F7 /* json_reader.cpp in Sources */,
 				7522042D15AF8B5A00F831F7 /* json_value.cpp in Sources */,
 				7522042E15AF8B5A00F831F7 /* json_writer.cpp in Sources */,
+				7522044C15B04F1E00F831F7 /* bitstate.cc in Sources */,
+				7522044D15B04F1E00F831F7 /* compile.cc in Sources */,
+				7522044E15B04F1E00F831F7 /* dfa.cc in Sources */,
+				7522044F15B04F1E00F831F7 /* filtered_re2.cc in Sources */,
+				7522045015B04F1E00F831F7 /* mimics_pcre.cc in Sources */,
+				7522045115B04F1E00F831F7 /* nfa.cc in Sources */,
+				7522045215B04F1E00F831F7 /* onepass.cc in Sources */,
+				7522045315B04F1E00F831F7 /* parse.cc in Sources */,
+				7522045415B04F1E00F831F7 /* perl_groups.cc in Sources */,
+				7522045515B04F1E00F831F7 /* prefilter_tree.cc in Sources */,
+				7522045615B04F1E00F831F7 /* prefilter.cc in Sources */,
+				7522045715B04F1E00F831F7 /* prog.cc in Sources */,
+				7522045815B04F1E00F831F7 /* re2.cc in Sources */,
+				7522045915B04F1E00F831F7 /* regexp.cc in Sources */,
+				7522045A15B04F1E00F831F7 /* set.cc in Sources */,
+				7522045B15B04F1E00F831F7 /* simplify.cc in Sources */,
+				7522045C15B04F1E00F831F7 /* tostring.cc in Sources */,
+				7522045D15B04F1E00F831F7 /* unicode_casefold.cc in Sources */,
+				7522045E15B04F1E00F831F7 /* unicode_groups.cc in Sources */,
+				7522046615B0597F00F831F7 /* arena.cc in Sources */,
+				7522046715B0597F00F831F7 /* hash.cc in Sources */,
+				7522046815B0597F00F831F7 /* rune.cc in Sources */,
+				7522046915B0597F00F831F7 /* stringpiece.cc in Sources */,
+				7522046A15B0597F00F831F7 /* stringprintf.cc in Sources */,
+				7522046B15B0597F00F831F7 /* strutil.cc in Sources */,
+				7522046C15B0597F00F831F7 /* valgrind.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,8 +343,6 @@
 		752203C915AF598300F831F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "compiler-default";
 				HEADER_SEARCH_PATHS = (
 					../dependencies/re2,
 					../dependencies/re2/re2,
@@ -255,6 +353,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../dependencies/re2/obj\"",
+					"\"$(SRCROOT)/../dependencies/re2/obj/so\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -263,8 +362,6 @@
 		752203CA15AF598300F831F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "compiler-default";
 				HEADER_SEARCH_PATHS = (
 					../dependencies/re2,
 					../dependencies/re2/re2,
@@ -275,6 +372,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../dependencies/re2/obj\"",
+					"\"$(SRCROOT)/../dependencies/re2/obj/so\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -3,7 +3,7 @@
 #import <stdio.h>
 
 namespace rtt {
-
+/*
 RE2* cachedRegexForString(std::string str) {
     static std::map<std::string, RE2*> cache;
     if (cache.count(str))
@@ -13,10 +13,14 @@ RE2* cachedRegexForString(std::string str) {
     cache[str] = compiledRegex;
     return cache[str];
 }
+ */
 
 static std::vector<std::string> JsonStringListToCPPStringList(Json::Value& j) {
     std::vector<std::string> strs;
     for (Json::Value& strj : j) {
+//    for (Json::Value::iterator it = j.begin(), et = j.begin(); it != et; ++it) {
+//        Json::Value& strj = *it;
+        
         strs.push_back(strj.asString());
     }
     return strs;
@@ -25,16 +29,24 @@ Language::Language(Json::Value& j) : symbols(), name(), extensions() {
     extensions = JsonStringListToCPPStringList(j["exts"]);
     
     for (Json::Value& symbolj : j["symbols"]) {
-        SymbolDef symdef = SymbolDef();
-        symdef.kind = symbolj["kind"].asString();
-        symdef.sourceRegex = symbolj["regex"].asString();
+//    Json::Value& syms = j["symbols"];
+//    for (Json::Value::iterator it = syms.begin(), et = syms.begin(); it != et; ++it) {
+//        Json::Value& symbolj = *it;
+        
+        std::vector<std::string> scoped;
         if (symbolj.isMember("scope")) {
             Json::Value& scopej = symbolj["scope"];
-            symdef.scoped = JsonStringListToCPPStringList(scopej);
+            scoped = JsonStringListToCPPStringList(scopej);
         }
+        
+        SymbolDef symdef = SymbolDef(
+            symbolj["kind"].asString(),
+            symbolj["regex"].asString(),
+            scoped
+        );
+        
         symbols.push_back(symdef);
     }
-    printf("$regex = %lu\n", symbols.front()._regex);
 }
 
 Manager Manager::getManager(std::string path_to_definitions) {
@@ -54,19 +66,19 @@ Manager::Manager(std::string path_to_definitions) : langs() {
         langs.push_back(lang);
     }
 }
-Language* Manager::detectLanguage(std::string path, std::string content) {
+Language Manager::detectLanguage(std::string path, std::string content) {
+    
     for (Language& lang : langs) {
-        printf("symbols = %u\n", lang.symbols.size());
+        lang.debug();
         for (std::string& ext : lang.extensions) {
             std::string dot_ext = std::string(".") + ext;
             printf("path = [%s]\n", path.c_str());
-            printf("ext = [%s]\n", dot_ext.c_str());
-            if (string_ends_with(path, dot_ext)) {
-                return &lang;
-            }
+            printf("dot_ext = [%s]\n", dot_ext.c_str());
+            if (string_ends_with(path, dot_ext))
+                return lang;
         }
     }
-    return nullptr;
+    return Language();
 }
 
 }

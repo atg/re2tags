@@ -48,8 +48,7 @@ bool string_ends_with(std::string &haystack, std::string &needle) {
     return 0 == haystack.compare(haystack.size() - needle.size(), needle.size(), needle);
 }
 
-void split_and_trim_into(std::string str, std::string delim, std::vector<std::string> into) {
+void split_and_trim_into(std::string str, std::string delim, std::vector<std::string>& into) {
 
-    
-
+    into.push_back(str);
 }
