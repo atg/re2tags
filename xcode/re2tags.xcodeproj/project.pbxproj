@@ -12,6 +12,10 @@
 		752203DB15AF59F900F831F7 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752203D415AF59BC00F831F7 /* parser.cpp */; };
 		752203DC15AF59F900F831F7 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752203D715AF59BC00F831F7 /* utils.cpp */; };
 		752203DE15AF5AF700F831F7 /* libre2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 752203DD15AF5AF700F831F7 /* libre2.a */; };
+		7522042715AF70CB00F831F7 /* re2tags.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042615AF70CB00F831F7 /* re2tags.cpp */; };
+		7522042C15AF8B5A00F831F7 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042915AF8B5A00F831F7 /* json_reader.cpp */; };
+		7522042D15AF8B5A00F831F7 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042A15AF8B5A00F831F7 /* json_value.cpp */; };
+		7522042E15AF8B5A00F831F7 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7522042B15AF8B5A00F831F7 /* json_writer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +53,11 @@
 		7522042315AF5B1600F831F7 /* unicode_groups.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unicode_groups.h; sourceTree = "<group>"; };
 		7522042415AF5B1600F831F7 /* variadic_function.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = variadic_function.h; sourceTree = "<group>"; };
 		7522042515AF5B1600F831F7 /* walker-inl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "walker-inl.h"; sourceTree = "<group>"; };
+		7522042615AF70CB00F831F7 /* re2tags.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = re2tags.cpp; sourceTree = "<group>"; };
+		7522042815AF70E500F831F7 /* re2tags.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = re2tags.hpp; sourceTree = "<group>"; };
+		7522042915AF8B5A00F831F7 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_reader.cpp; path = "../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp"; sourceTree = "<group>"; };
+		7522042A15AF8B5A00F831F7 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_value.cpp; path = "../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp"; sourceTree = "<group>"; };
+		7522042B15AF8B5A00F831F7 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json_writer.cpp; path = "../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				752203DD15AF5AF700F831F7 /* libre2.a */,
+				7522042915AF8B5A00F831F7 /* json_reader.cpp */,
+				7522042A15AF8B5A00F831F7 /* json_value.cpp */,
+				7522042B15AF8B5A00F831F7 /* json_writer.cpp */,
 				752203DF15AF5B1600F831F7 /* re2 */,
 				752203D015AF59BC00F831F7 /* source */,
 				752203BF15AF598300F831F7 /* Products */,
@@ -92,6 +104,8 @@
 				752203D615AF59BC00F831F7 /* tag.hpp */,
 				752203D715AF59BC00F831F7 /* utils.cpp */,
 				752203D815AF59BC00F831F7 /* utils.hpp */,
+				7522042615AF70CB00F831F7 /* re2tags.cpp */,
+				7522042815AF70E500F831F7 /* re2tags.hpp */,
 			);
 			name = source;
 			path = ../source;
@@ -171,6 +185,10 @@
 				752203DA15AF59F900F831F7 /* main.cpp in Sources */,
 				752203DB15AF59F900F831F7 /* parser.cpp in Sources */,
 				752203DC15AF59F900F831F7 /* utils.cpp in Sources */,
+				7522042715AF70CB00F831F7 /* re2tags.cpp in Sources */,
+				7522042C15AF8B5A00F831F7 /* json_reader.cpp in Sources */,
+				7522042D15AF8B5A00F831F7 /* json_value.cpp in Sources */,
+				7522042E15AF8B5A00F831F7 /* json_writer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,11 +244,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				HEADER_SEARCH_PATHS = (
 					../dependencies/re2,
 					../dependencies/re2/re2,
 					"../dependencies/jsoncpp-src-0.5.0/include/json",
+					"../dependencies/jsoncpp-src-0.5.0/src/lib_json",
+					"../dependencies/jsoncpp-src-0.5.0/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -244,11 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				HEADER_SEARCH_PATHS = (
 					../dependencies/re2,
 					../dependencies/re2/re2,
 					"../dependencies/jsoncpp-src-0.5.0/include/json",
+					"../dependencies/jsoncpp-src-0.5.0/src/lib_json",
+					"../dependencies/jsoncpp-src-0.5.0/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

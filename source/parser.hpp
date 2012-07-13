@@ -13,11 +13,13 @@ struct ScopePart {
 
 struct Parser {
     
-    Language language;
-    std::string content;
+    Language& language;
+    std::string& content;
     
     std::vector<Tag> tags;
     std::deque<ScopePart> scopeStack;
+    
+    Parser(Language& lang, std::string& contentString) : language(lang), content(contentString), tags(), scopeStack() { }
     
     void parseFile();
     void parseLine(size_t lineOffset, size_t lineLength);

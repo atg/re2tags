@@ -11,4 +11,5 @@ dependencies: \
   ../dependencies/jsoncpp-src-0.5.0/include/json/forwards.h \
   ../dependencies/jsoncpp-src-0.5.0/include/json/reader.h \
   ../dependencies/jsoncpp-src-0.5.0/include/json/features.h \
-  ../dependencies/jsoncpp-src-0.5.0/include/json/writer.h
+  ../dependencies/jsoncpp-src-0.5.0/include/json/writer.h \
+  /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.hpp

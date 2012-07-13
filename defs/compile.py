@@ -42,6 +42,7 @@ for p in os.listdir('.'):
         for section in sections:
             scopes = rcp.get(section, "scope").strip().split(', ') if rcp.has_option(section, "scope") else []
             j["symbols"].append({
+                "kind": section,
                 "regex": rcp.get(section, "regex"),
                 "scope": scopes,
             })
