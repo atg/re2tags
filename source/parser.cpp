@@ -54,9 +54,10 @@ void Parser::parseFile() {
         
         if (c == '\r' || c == '\n') {
             
-            parseLine(lastLineStart, lastLineLength);
+            if (lastLineStart + lastLineLength <= len)
+                parseLine(lastLineStart, lastLineLength);
             
-            lastLineStart = i;
+            lastLineStart = i + 1;
             lastLineLength = 0;
         }
         else {
@@ -68,11 +69,11 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
     
     if (!lineLength)
         return;
-
+//    printf("[[%s]]\n", content.substr(lineOffset, lineLength).c_str());
     // Find the indentation
     size_t len = content.size();
     long indent = 0;
-    for (size_t i = lineOffset; i < len; i++) {
+    for (size_t i = lineOffset; i < lineOffset + lineLength; i++) {
         char c = content[i];
         if (c == ' ')
             indent += 1;
@@ -87,13 +88,20 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
     
     const re2::StringPiece piece = re2::StringPiece(content.c_str() + lineOffset, lineLength);
     
+    while (scopeStack.size() && scopeStack.back().indentation >= indent) {        
+        scopeStack.pop_back();
+    }
+    
     __block std::vector<std::string> names;
     bool hadMatch = false;
     for (__block SymbolDef& sym : language.symbols) {
         // Check that the scope is specified
         if (sym.scoped.size()) {
             bool foundMatchingScope = false;
-            if (scopeStack.size()) {
+            if (sym.scoped.front() == std::string("ROOT")) {
+                foundMatchingScope = scopeStack.size() == 0;
+            }
+            else if (scopeStack.size()) {
                 for (std::string scope : sym.scoped) {
                     if (scopeStack.back().kind == scope) {
                         foundMatchingScope = true;
@@ -164,6 +172,12 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
     
 void Parser::produceTag(Tag t) {
     tags.push_back(t);
+    
+    ScopePart p;
+    p.name = t.name;
+    p.kind = t.kind;
+    p.indentation = t.indentation;
+    scopeStack.push_back(p);
 }
 
 }

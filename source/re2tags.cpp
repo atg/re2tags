@@ -6,11 +6,11 @@ std::vector<rtt::Tag> rtt::tagsForFile(std::string definitionspath, std::string 
     
     if (lang.name.size()) {
         
-        for (int i = 0; i < 10000; i++) {
+//        for (int i = 0; i < 10000; i++) {
             rtt::Parser parser(lang, content);
             parser.parseFile();
-        }
-//        return parser.tags;
+//        }
+        return parser.tags;
     }
     
     return std::vector<rtt::Tag>();

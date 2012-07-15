@@ -1,1240 +1,0 @@
-Tre2tags
-v5
-r1
-cCheck dependencies
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.o /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.o /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.o /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.o /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.o /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/alexgordon/Temporary/re2tags/xcode/build/Debug/re2tags normal x86_64
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
-c000000004F90F72900000000000000CC
-t1334900521
-s204
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/autolink.h
-c000000004B99EDD700000000000001B6
-t1268379095
-s438
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/config.h
-c000000004B99EDD70000000000000600
-t1268379095
-s1536
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/features.h
-c000000004B99EDD7000000000000050A
-t1268379095
-s1290
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/forwards.h
-c000000004B99EDD700000000000002DF
-t1268379095
-s735
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/json.h
-c000000004B99EDD700000000000000C8
-t1268379095
-s200
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/reader.h
-c000000004B99EDD70000000000001956
-t1268379095
-s6486
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/value.h
-c000000004FFF4DB000000000000084A8
-t1342131632
-s33960
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/include/json/writer.h
-c000000004B99EDD7000000000000182C
-t1268379095
-s6188
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_batchallocator.h
-c000000004B99EDD70000000000000F59
-t1268379095
-s3929
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp
-c000000004B99EDD700000000000051D7
-t1268379095
-s20951
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp
-c000000004B99EDD70000000000009885
-t1268379095
-s39045
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_valueiterator.inl
-c000000004B99EDD70000000000001CC7
-t1268379095
-s7367
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp
-c000000004B99EDD70000000000004F5A
-t1268379095
-s20314
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/obj/libre2.a
-c000000004FFF8FF700000000004480DC
-t1342148599
-s4489436
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/obj/so/libre2.so.0
-c000000004FFF3656000000000006F3A4
-t1342125654
-s455588
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc
-c000000004FFF1FE40000000000002B33
-t1342119908
-s11059
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc
-c000000004FFF1FE40000000000008018
-t1342119908
-s32792
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc
-c000000004FFF1FE40000000000011B34
-t1342119908
-s72500
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc
-c000000004FFF1FE40000000000000AD6
-t1342119908
-s2774
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.h
-c000000004FFF1FE40000000000000DF5
-t1342119908
-s3573
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.cc
-c000000004FFF1FE40000000000001745
-t1342119908
-s5957
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cc
-c000000004FFF1FE400000000000051A9
-t1342119908
-s20905
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc
-c000000004FFF1FE4000000000000569A
-t1342119908
-s22170
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc
-c000000004FFF1FE400000000000101C8
-t1342119908
-s65992
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc
-c000000004FFF1FE40000000000000AC5
-t1342119908
-s2757
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.cc
-c000000004FFF1FE40000000000003FE5
-t1342119908
-s16357
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.h
-c000000004FFF1FE40000000000000B74
-t1342119908
-s2932
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.cc
-c000000004FFF1FE40000000000002E83
-t1342119908
-s11907
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.h
-c000000004FFF1FE4000000000000128E
-t1342119908
-s4750
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cc
-c000000004FFF1FE40000000000001FC1
-t1342119908
-s8129
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.h
-c000000004FFF1FE40000000000003801
-t1342119908
-s14337
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cc
-c000000004FFF1FE40000000000008C1E
-t1342119908
-s35870
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.h
-c000000004FFF1FE4000000000000802F
-t1342119908
-s32815
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc
-c000000004FFF1FE40000000000005CF4
-t1342119908
-s23796
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.h
-c000000004FFF1FE40000000000005874
-t1342119908
-s22644
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc
-c000000004FFF1FE40000000000000B4F
-t1342119908
-s2895
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.h
-c000000004FFF1FE40000000000000698
-t1342119908
-s1688
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cc
-c000000004FFF1FE40000000000002F6C
-t1342119908
-s12140
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/stringpiece.h
-c000000004FFF8CD700000000000016DB
-t1342147799
-s5851
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.cc
-c000000004FFF1FE4000000000000204C
-t1342119908
-s8268
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc
-c000000004FFF1FE400000000000028BD
-t1342119908
-s10429
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.h
-c000000004FFF1FE400000000000009B0
-t1342119908
-s2480
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cc
-c000000004FFF1FE400000000000160E3
-t1342119908
-s90339
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.h
-c000000004FFF1FE400000000000005B4
-t1342119908
-s1460
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/variadic_function.h
-c000000004FFF1FE40000000000004123
-t1342119908
-s16675
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/walker-inl.h
-c000000004FFF1FE40000000000001E32
-t1342119908
-s7730
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc
-c000000004FFF1FE40000000000001812
-t1342119908
-s6162
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.h
-c000000004FFF1FE40000000000000D9C
-t1342119908
-s3484
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/atomicops.h
-c000000004FFF1FE40000000000000729
-t1342119908
-s1833
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/flags.h
-c000000004FFF1FE400000000000003E2
-t1342119908
-s994
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc
-c000000004FFF1FE4000000000000213E
-t1342119908
-s8510
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/logging.h
-c000000004FFF1FE40000000000000870
-t1342119908
-s2160
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/mutex.h
-c000000004FFF1FE40000000000001BAD
-t1342119908
-s7085
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc
-c000000004FFF1FE4000000000000130A
-t1342119908
-s4874
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/sparse_array.h
-c000000004FFF1FE4000000000000370A
-t1342119908
-s14090
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/sparse_set.h
-c000000004FFF1FE40000000000001434
-t1342119908
-s5172
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc
-c000000004FFF1FE400000000000009FE
-t1342119908
-s2558
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cc
-c000000004FFF1FE40000000000000787
-t1342119908
-s1927
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc
-c000000004FFF1FE40000000000000D3A
-t1342119908
-s3386
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/utf.h
-c000000004FFF1FE400000000000005FA
-t1342119908
-s1530
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/util.h
-c000000004FFF1FE40000000000000C34
-t1342119908
-s3124
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc
-c000000004FFF1FE400000000000001CD
-t1342119908
-s461
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.h
-c000000004FFF1FE400000000000414F6
-t1342119908
-s267510
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp
-c0000000050003D7C0000000000000989
-t1342193020
-s2441
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp
-c0000000050003DD70000000000000627
-t1342193111
-s1575
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp
-c0000000050003A9D000000000000029D
-t1342192285
-s669
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp
-c0000000050004CFB000000000000130B
-t1342196987
-s4875
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/parser.hpp
-c0000000050003B850000000000000243
-t1342192517
-s579
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp
-c000000005000427800000000000001DD
-t1342194296
-s477
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.hpp
-c000000004FFF5FCB00000000000000C6
-t1342136267
-s198
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/tag.hpp
-c000000004FF052610000000000000160
-t1341149793
-s352
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp
-c00000000500044DF000000000000052F
-t1342194911
-s1327
-
-N/Users/alexgordon/Temporary/re2tags/xcode/../source/utils.hpp
-c00000000500044A200000000000001BA
-t1342194850
-s442
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/re2tags
-t2
-s0
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.o
-t1342192315
-s92892
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.o
-t1342192304
-s121308
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.o
-t1342192304
-s340360
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.o
-t1342194942
-s341208
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.o
-t1342192305
-s425776
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.o
-t1342192305
-s225896
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.o
-t1342192315
-s34000
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.o
-t1342192302
-s331800
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.o
-t1342192302
-s381776
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.o
-t1342192302
-s199288
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.o
-t1342193114
-s105740
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.o
-t1342192306
-s176444
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.o
-t1342192307
-s210100
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.o
-t1342192307
-s119500
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.o
-t1342192308
-s217504
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.o
-t2
-s0
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.o
-t1342192308
-s39260
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.o
-t1342192309
-s349988
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.o
-t1342192310
-s462144
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.o
-t1342192310
-s128720
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.o
-t1342192311
-s325560
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.LinkFileList
-c000000005000220B0000000000000F41
-t1342185995
-s3905
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.o
-t1342194944
-s178736
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.o
-t1342192312
-s582220
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.o
-t1342192315
-s7584
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.o
-t1342192312
-s160028
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.o
-t1342192313
-s217528
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.o
-t1342192316
-s85672
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.o
-t1342192315
-s36720
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.o
-t1342192316
-s41696
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.o
-t1342192313
-s211836
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.o
-t1342192314
-s37940
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.o
-t1342192314
-s99360
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.o
-t1342194943
-s45568
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.o
-t1342192316
-s33668
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/definition.plist
-t1342142901
-s276
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_reader.plist
-t1342142907
-s276
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_value.plist
-t1342142909
-s276
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_writer.plist
-t1342142913
-s276
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/main.plist
-t1342142901
-s276
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/parser.plist
-t1342142906
-s276
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/re2tags.plist
-t1342142902
-s276
-
-N/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/utils.plist
-t1342142901
-s276
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp
-s363835702.496542
-e363835707.461251
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp0d387f36b1afb541^8429763bb1afb541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp0000000000000000^2498"Analyze ../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_reader.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_reader.plist36"5AD8188D-5419-4B19-B0B1-1D7034E5C4CB-
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp
-s363835706.097615
-e363835710.111698
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cppac1d193ab1afb541^91981c3eb1afb541^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp0000000000000000^2494"Analyze ../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_value.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_value.plist36"CEE14F6A-2CB0-4018-A109-10845554E333-
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp
-s363835710.113093
-e363835713.314850
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp17111d3eb1afb541^959b5041b1afb541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp0000000000000000^2498"Analyze ../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_writer.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/json_writer.plist36"40066DCA-C178-4AAD-A9E9-C06BA95FE84A-
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp
-s363835699.893621
-e363835701.392423
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp3be2e433b1afb541^73696435b1afb541^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp0000000000000000^2420"Analyze ../source/definition.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/definition.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/definition.plist36"EFB3033B-DE2F-4F12-AFE9-96A1689D5A73-
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp
-s363835699.894388
-e363835701.392201
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp880ee533b1afb541^e7716435b1afb541^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp0000000000000000^2396"Analyze ../source/main.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/main.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/main.plist36"F1DD37CF-26C3-4216-92E8-9046390208FC-
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp
-s363835701.393592
-e363835706.094688
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp5eda6435b1afb541^ff3d183ab1afb541^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp0000000000000000^2404"Analyze ../source/parser.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/parser.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/parser.plist36"BB60CFFE-5257-4C70-BA0E-3914A2CC4D92-
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp
-s363835701.682013
-e363835702.495115
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp9eb2ae35b1afb541^a5c07e36b1afb541^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp0000000000000000^2408"Analyze ../source/re2tags.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/re2tags.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/re2tags.plist36"29E6F382-2AB4-4EC2-B13B-4068C298871C-
-
-CAnalyze /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp
-s363835701.394784
-e363835701.680752
-r1
-xAnalyze
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp952a6535b1afb541^8d46ae35b1afb541^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp0000000000000000^2400"Analyze ../source/utils.cpp    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -Xclang -analyzer-disable-checker -Xclang deadcode.IdempotentOperations -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/utils.d --analyze /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/StaticAnalyzer/normal/x86_64/utils.plist36"4477FCB7-D24A-465A-80B8-E6AEF44E5298-
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp
-r0
-
-CBuild AST from /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies4c19e47b84b0b541^e90de77b84b0b541^---0#1#0#--18"Check dependencies36"911B1292-92D9-46AE-B4B4-1A9301E9E7D6-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885114.440074
-e363885115.418236
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc50c6703a72b0b541^92216b3b72b0b541^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc0000000000000000^2602"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.o ../dependencies/re2/util/arena.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/arena.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/arena.o36"669833EB-AC89-46DA-9FF5-B1CE75FEDC8E-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885102.920565
-e363885104.051457
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc2ec7eb2e72b0b541^7c2c0d3072b0b541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc0000000000000000^2618"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.o ../dependencies/re2/re2/bitstate.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/bitstate.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/bitstate.o36"062BD1F2-4ED1-40BA-A537-E03D315BA512-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885103.003785
-e363885104.746094
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc7616012f72b0b541^35ecbf3072b0b541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc0000000000000000^2612"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.o ../dependencies/re2/re2/compile.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/compile.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/compile.o36"64AA5E12-BCF7-4AAC-8D2C-B089BC887A0F-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.o /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363887740.877910
-e363887742.575786
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp:1:
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:
-oIn file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:
-o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]
-o#warning This file includes at least one deprecated or antiquated header. \
-o ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cppf50ee37c7cb0b541^9965937e7cb0b541^-984"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp:1:In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]#warning This file includes at least one deprecated or antiquated header. \ ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@354"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.-363887742#18446744073709551615#0#3(2@91"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp:1:-363887742#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@73"file://localhost/Users/alexgordon/Temporary/re2tags/source/definition.cpp0000000000000000^0#8#0#8#8#0#21"Clang LLVM 1.0 Notice--2@91"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:-363887742#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/alexgordon/Temporary/re2tags/source/definition.hpp0000000000000000^5#8#5#8#93#0#21"Clang LLVM 1.0 Notice--2@166"In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:-363887742#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@156"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h0000000000000000^30#9#30#9#1463#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@164"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h0000000000000000^31#1#31#1#1480#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@82"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp0000000000000000^2604"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.o ../source/definition.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/definition.o36"A6C2A615-9F42-414B-8FE8-D2CD20744052-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885104.052781
-e363885105.603999
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc0aa30d3072b0b541^02a09a3172b0b541^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc0000000000000000^2588"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.o ../dependencies/re2/re2/dfa.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/dfa.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/dfa.o36"6F81320B-3483-4D91-9115-0B1FDD830695-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885104.765593
-e363885105.919070
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc211fc43072b0b541^213cf23172b0b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc0000000000000000^2642"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.o ../dependencies/re2/re2/filtered_re2.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/filtered_re2.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/filtered_re2.o36"BAE4CAB4-2CA9-4E39-9242-AD49C9FC5182-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885114.753142
-e363885115.399761
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc39eec03a72b0b541^ba66663b72b0b541^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc0000000000000000^2596"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.o ../dependencies/re2/util/hash.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/hash.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/hash.o36"A81D92F9-F9D9-4348-A56A-2064401D6EB6-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885100.955094
-e363885102.211952
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp62a3f42c72b0b541^9a43362e72b0b541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp0000000000000000^2684"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.o ../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_reader.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_reader.o36"72B42FF4-075C-4E15-9D76-4F6136A0675D-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885101.670755
-e363885102.919133
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cppc7d6ab2d72b0b541^0a4ceb2e72b0b541^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp0000000000000000^2678"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.o ../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_value.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_value.o36"D087BBCF-9DC1-4342-8071-44DCFEA259CC-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885102.213250
-e363885103.002492
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp7fc1362e72b0b541^c8b2002f72b0b541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp0000000000000000^2684"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.o ../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/jsoncpp-src-0.5.0/src/lib_json/json_writer.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/json_writer.o36"B2F28898-BD77-4993-B6AA-39FAD7EBBE32-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.o /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885912.976153
-e363885914.627197
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp:3:
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.hpp:3:
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:
-oIn file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:
-o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]
-o#warning This file includes at least one deprecated or antiquated header. \
-o ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp5801fa5875b0b541^7d91a05a75b0b541^-1067"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp:3:In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.hpp:3:In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]#warning This file includes at least one deprecated or antiquated header. \ ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@354"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.-363885914#18446744073709551615#0#4(2@85"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp:3:-363885914#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@67"file://localhost/Users/alexgordon/Temporary/re2tags/source/main.cpp0000000000000000^2#8#2#8#45#0#21"Clang LLVM 1.0 Notice--2@88"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.hpp:3:-363885914#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@70"file://localhost/Users/alexgordon/Temporary/re2tags/source/re2tags.hpp0000000000000000^2#8#2#8#42#0#21"Clang LLVM 1.0 Notice--2@91"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:-363885914#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/alexgordon/Temporary/re2tags/source/definition.hpp0000000000000000^5#8#5#8#93#0#21"Clang LLVM 1.0 Notice--2@166"In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:-363885914#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@156"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h0000000000000000^30#9#30#9#1463#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@164"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h0000000000000000^31#1#31#1#1480#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@76"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp0000000000000000^2568"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.o ../source/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../source/main.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/main.o36"3E3478B4-5E50-4490-91B9-6AAF9FB4CCF2-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885105.605372
-e363885106.568526
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.ccc2169b3172b0b541^4a98913272b0b541^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.cc0000000000000000^2636"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.o ../dependencies/re2/re2/mimics_pcre.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/mimics_pcre.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/mimics_pcre.o36"DB40C13C-1E15-4C55-AB8B-BD3D49A3CD8B-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885105.920461
-e363885107.071461
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cccec5eb3172b0b541^e754123372b0b541^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cc0000000000000000^2588"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.o ../dependencies/re2/re2/nfa.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/nfa.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/nfa.o36"CDAEA03F-42A7-4440-8F6D-6C92A4326FE4-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885106.569822
-e363885107.750227
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc3e07923272b0b541^1a17ca3372b0b541^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc0000000000000000^2612"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.o ../dependencies/re2/re2/onepass.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/onepass.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/onepass.o36"3554EA55-6884-40CA-907C-5E06B568BFB8-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885107.085308
-e363885108.754894
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc76fa153372b0b541^f032c33472b0b541^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc0000000000000000^2600"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.o ../dependencies/re2/re2/parse.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/parse.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parse.o36"D84B56EE-7396-442A-8F4E-028BD2C5C8C4-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.o /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363889787.900237
-e363889789.588425
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp:2:
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.hpp:3:
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:
-oIn file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:
-o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]
-o#warning This file includes at least one deprecated or antiquated header. \
-o ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp5798e67b84b0b541^b6a1967d84b0b541^-1068"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp:2:In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.hpp:3:In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]#warning This file includes at least one deprecated or antiquated header. \ ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@354"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.-363889789#18446744073709551615#0#4(2@87"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp:2:-363889789#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@69"file://localhost/Users/alexgordon/Temporary/re2tags/source/parser.cpp0000000000000000^1#8#1#8#24#0#21"Clang LLVM 1.0 Notice--2@87"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.hpp:3:-363889789#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/alexgordon/Temporary/re2tags/source/parser.hpp0000000000000000^2#8#2#8#42#0#21"Clang LLVM 1.0 Notice--2@91"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:-363889789#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/alexgordon/Temporary/re2tags/source/definition.hpp0000000000000000^5#8#5#8#93#0#21"Clang LLVM 1.0 Notice--2@166"In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:-363889789#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@156"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h0000000000000000^30#9#30#9#1463#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@164"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h0000000000000000^31#1#31#1#1480#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@78"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp0000000000000000^2580"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.o ../source/parser.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../source/parser.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/parser.o36"98AD9BF1-55AE-4531-97A0-EC922DDC7A31-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885107.751616
-e363885108.705706
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc7f89c03372b0b541^81b3b43472b0b541^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc0000000000000000^2636"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.o ../dependencies/re2/re2/perl_groups.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/perl_groups.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/perl_groups.o36"5EC69144-58AF-4DA3-9ABB-4796C626F9C7-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885108.756178
-e363885109.765295
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.ccb8b1c13472b0b541^cbf8c33572b0b541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.cc0000000000000000^2624"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.o ../dependencies/re2/re2/prefilter.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter.o36"EB74D01F-AD05-4D37-AE48-5D810D6E1098-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885108.706973
-e363885110.092680
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.ccf418b53472b0b541^103e183672b0b541^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.cc0000000000000000^2654"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.o ../dependencies/re2/re2/prefilter_tree.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prefilter_tree.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prefilter_tree.o36"1B597442-DABB-402F-859D-E48468AEC638-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885109.781120
-e363885110.939409
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cce389c83572b0b541^639bf03672b0b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cc0000000000000000^2594"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.o ../dependencies/re2/re2/prog.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/prog.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/prog.o36"769E7AAA-4BBF-4592-89DB-33E55DD16E6A-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885110.104428
-e363885111.612295
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cce8db1a3672b0b541^24d09c3772b0b541^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cc0000000000000000^2588"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.o ../dependencies/re2/re2/re2.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/re2.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2.o36"42A712A8-1C78-4632-AC2C-7761178D75B0-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.o /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363887743.669161
-e363887744.429811
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp:1:
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.hpp:3:
-oIn file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:
-oIn file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:
-o/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]
-o#warning This file includes at least one deprecated or antiquated header. \
-o ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cppce6cab7f7cb0b541^faf26e807cb0b541^-1070"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp:1:In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.hpp:3:In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated. [-W#warnings]#warning This file includes at least one deprecated or antiquated header. \ ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@354"#warning This file includes at least one deprecated or antiquated header. Please consider using one of the 32 headers found in section 17.4.1.2 of the C++ standard. Examples include substituting the <X> header for the <X.h> header for C++ includes, or <iostream> instead of the deprecated header <iostream.h>. To disable this warning use -Wno-deprecated.-363887744#18446744073709551615#0#4(2@88"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp:1:-363887744#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@70"file://localhost/Users/alexgordon/Temporary/re2tags/source/re2tags.cpp0000000000000000^0#8#0#8#8#0#21"Clang LLVM 1.0 Notice--2@88"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.hpp:3:-363887744#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@70"file://localhost/Users/alexgordon/Temporary/re2tags/source/re2tags.hpp0000000000000000^2#8#2#8#42#0#21"Clang LLVM 1.0 Notice--2@91"In file included from /Users/alexgordon/Temporary/re2tags/xcode/../source/definition.hpp:6:-363887744#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/alexgordon/Temporary/re2tags/source/definition.hpp0000000000000000^5#8#5#8#93#0#21"Clang LLVM 1.0 Notice--2@166"In file included from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h:31:-363887744#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@156"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/iostream.h0000000000000000^30#9#30#9#1463#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@164"file://localhost/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/usr/include/c++/4.2.1/backward/backward_warning.h0000000000000000^31#1#31#1#1480#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@79"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp0000000000000000^2586"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.o ../source/re2tags.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../source/re2tags.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.o36"8367AEA0-C11A-4F75-8980-49E16C650FF2-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885110.950147
-e363885112.512760
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc035df33672b0b541^ed61833872b0b541^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc0000000000000000^2606"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.o ../dependencies/re2/re2/regexp.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/regexp.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/regexp.o36"E382BE96-C1EE-48E6-826E-4BE82B2224C2-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885115.401039
-e363885115.443064
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc2ac9663b72b0b541^f774713b72b0b541^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc0000000000000000^2596"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.o ../dependencies/re2/util/rune.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/rune.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/rune.o36"2203EAC6-A313-476A-A1A0-C4C32B4D0AD3-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885111.613562
-e363885112.489580
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc23319d3772b0b541^52607d3872b0b541^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc0000000000000000^2588"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.o ../dependencies/re2/re2/set.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/set.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/set.o36"E6FCAF9A-008A-40FE-8B8E-DC6F71BE1084-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885112.490895
-e363885113.337178
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cce6c97d3872b0b541^3d0a573972b0b541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cc0000000000000000^2618"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.o ../dependencies/re2/re2/simplify.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/simplify.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/simplify.o36"3ADEC504-41F8-40FE-B036-85F64AA9A42D-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885115.419659
-e363885116.055652
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc7e8a6b3b72b0b541^444f0e3c72b0b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc0000000000000000^2638"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.o ../dependencies/re2/util/stringpiece.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringpiece.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringpiece.o36"6E031417-2B54-4ACC-AEDD-83CE79B6CC8E-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885115.444364
-e363885116.004985
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cccadf713b72b0b541^3c84013c72b0b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cc0000000000000000^2644"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.o ../dependencies/re2/util/stringprintf.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/stringprintf.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/stringprintf.o36"4B77E6AE-6353-44F0-B3D6-289E6DCE38B4-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885116.006191
-e363885116.750810
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc70b2013c72b0b541^b134c03c72b0b541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc0000000000000000^2614"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.o ../dependencies/re2/util/strutil.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/strutil.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/strutil.o36"FA1E6F14-4FCE-4522-B08C-D10B14247D3C-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885112.513998
-e363885113.271006
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.ccddb2833872b0b541^f8c5453972b0b541^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.cc0000000000000000^2618"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.o ../dependencies/re2/re2/tostring.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/tostring.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/tostring.o36"4C1C61E5-927F-42EA-9416-8403156B4871-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885113.282330
-e363885114.438785
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc3867483972b0b541^0f61703a72b0b541^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc0000000000000000^2666"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.o ../dependencies/re2/re2/unicode_casefold.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_casefold.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_casefold.o36"039DA9B2-333A-46B4-9BD7-B5A720148B65-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885113.338474
-e363885114.751811
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cca8c3563972b0b541^d579c03a72b0b541^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cc0000000000000000^2654"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.o ../dependencies/re2/re2/unicode_groups.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/re2/unicode_groups.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/unicode_groups.o36"8722ACB8-CE2E-4F6F-B496-BB1D86071C23-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.o /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363887743.296055
-e363887743.667834
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cppb7f14b7f7cb0b541^4354b57f7cb0b541^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp0000000000000000^2574"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.o ../source/utils.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../source/utils.cpp -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/utils.o36"CF206B66-9BE4-4122-9CE8-54410B62E410-
-
-CCompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.o /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s363885116.056923
-e363885116.762171
-r1
-xCompileC
-xbuild/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.o
-x/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc96b00e3c72b0b541^1b9dc33c72b0b541^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc0000000000000000^2620"CompileC build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.o ../dependencies/re2/util/valgrind.cc normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-generated-files.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-own-target-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-all-target-headers.hmap -iquote /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/re2tags-project-headers.hmap -I/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/include -I../dependencies/re2 -I../dependencies/re2/re2 -I../dependencies/jsoncpp-src-0.5.0/include/json -I../dependencies/jsoncpp-src-0.5.0/src/lib_json -I../dependencies/jsoncpp-src-0.5.0/include -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources/x86_64 -I/Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/DerivedSources -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -MMD -MT dependencies -MF /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.d --serialize-diagnostics /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.dia -c /Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/util/valgrind.cc -o /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/valgrind.o36"BB78E348-9B02-4FEC-A849-0BC06D8E0C70-
-
-CLd /Users/alexgordon/Temporary/re2tags/xcode/build/Debug/re2tags normal x86_64
-s363889789.594801
-e363889790.776027
-r1
-xLd
-x/Users/alexgordon/Temporary/re2tags/xcode/build/Debug/re2tags
-xnormal
-xx86_64
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Link /Users/alexgordon/Temporary/re2tags/xcode/build/Debug/re2tagsac58987d84b0b541^e3aac67e84b0b541^---0#0#0#--825"Ld build/Debug/re2tags normal x86_64    cd /Users/alexgordon/Temporary/re2tags/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -L/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/obj -L/Users/alexgordon/Temporary/re2tags/xcode/../dependencies/re2/obj/so -F/Users/alexgordon/Temporary/re2tags/xcode/build/Debug -filelist /Users/alexgordon/Temporary/re2tags/xcode/build/re2tags.build/Debug/re2tags.build/Objects-normal/x86_64/re2tags.LinkFileList -mmacosx-version-min=10.7 -o /Users/alexgordon/Temporary/re2tags/xcode/build/Debug/re2tags36"1D51E7E7-AC48-4FF8-9BAA-02A145DE98B7-
-

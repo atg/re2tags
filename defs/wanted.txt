@@ -1,27 +1,89 @@
-Clojure
-CoffeeScript
-Erlang
-LaTeX
-Lua
-Nu
-Objective-C
-Objective-J
-Perl
-ActionScript
-Ada
-D
-Dylan
-Fortran
-Go
-Groovy
-Lisp
-OCaml
-Pascal
-Prolog
-R
-Scala
-Scheme
-Standard-ML
-Tcl
-Verilog
-VHDL
+Non-Programming:
+x plain
+  markdown
+x html
+x haml
+  textile
+  restructuredtext
+
+• css
+• less
+  sass
+• scss
+
+x json
+
+x xml
+  yaml
+  ini
+
+x latex
+x tex
+
+
+Programming:
+x js            Use doctorjs instead
+• ruby
+• python
+  shell
+• java
+• php
+x c              Use Exuberant ctags instead
+x c++            Use Exuberant ctags instead
+  perl
+• objc
+• objc++
+• coffee
+  csharp
+  haskell
+  scala
+  (asm)
+  (actionscript)
+• lua
+  prolog
+  groovy
+• clojure
+  d
+  erlang
+• r
+  lisp
+  go
+  scheme
+  (vb)
+  matlab
+  rust
+  (supercollider)
+  tcl
+  (puppet)
+  ocaml
+  arduino
+  fortran
+  (delphi)
+  (coldfusion)
+  fsharp
+  smalltalk
+  verilog
+  ada
+  racket
+  vhdl
+  objj
+  io
+  ml
+  eiffel
+  coq
+  nemerle
+  dart
+  arc
+  rebol
+  dcpu
+  nu
+  factor
+  dylan
+  julia
+  kotlin
+  self
+  ioke
+
+  applescript
+  pascal
+
