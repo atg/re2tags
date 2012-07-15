@@ -1,7 +1,67 @@
 {
+    "clojure": {
+        "exts": [
+            "clj"
+        ], 
+        "symbols": [
+            {
+                "kind": "constant", 
+                "regex": "^\\s*([[ \\t]+\\t]*def(once)?[[ \\t]+\\t]*(?P<names>\\S+)", 
+                "scope": []
+            }, 
+            {
+                "kind": "function", 
+                "regex": "^\\s*([[ \\t]+\\t]*defn(-|inline|multi)?[[ \\t]+\\t]*(?P<names>\\S+)", 
+                "scope": []
+            }, 
+            {
+                "kind": "macro", 
+                "regex": "^\\s*([[ \\t]+\\t]*defmacro[[ \\t]+\\t]*(?P<names>\\S+)", 
+                "scope": []
+            }, 
+            {
+                "kind": "struct", 
+                "regex": "^\\s*([[ \\t]+\\t]*defrecord[[ \\t]+\\t]*(?P<names>\\S+)", 
+                "scope": []
+            }, 
+            {
+                "kind": "method", 
+                "regex": "^\\s*([[ \\t]+\\t]*defmethod[[ \\t]+\\t]*(?P<names>\\S+)", 
+                "scope": []
+            }
+        ]
+    }, 
+    "coffee": {
+        "exts": [
+            "coffee"
+        ], 
+        "symbols": [
+            {
+                "kind": "class", 
+                "regex": "^\\s*class[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
+                "scope": []
+            }, 
+            {
+                "kind": "method", 
+                "regex": "^[[ \\t]+\\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*[:=][[ \\t]+\\t]*(\\([^\\n)]*\\))?[[ \\t]+\\t]*->$", 
+                "scope": [
+                    "class"
+                ]
+            }, 
+            {
+                "kind": "function", 
+                "regex": "^+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*[:=][[ \\t]+\\t]*(\\([^\\n)]*\\))?[[ \\t]+\\t]*->$", 
+                "scope": [
+                    "ROOT"
+                ]
+            }
+        ]
+    }, 
     "css": {
         "exts": [
-            "css"
+            "css", 
+            "less", 
+            "scss"
         ], 
         "symbols": [
             {
@@ -46,6 +106,77 @@
                 "scope": [
                     "class", 
                     "interface"
+                ]
+            }
+        ]
+    }, 
+    "lua": {
+        "exts": [
+            "lua"
+        ], 
+        "symbols": [
+            {
+                "kind": "method", 
+                "regex": "^\\s*function[ \\t]+(?P<parents>(?:[a-zA-Z_][a-zA-Z0-9_]*))\\.(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*([[ \\t]+\\t]*self", 
+                "scope": []
+            }, 
+            {
+                "kind": "function", 
+                "regex": "^\\s*function[ \\t]+((?P<parents>(?:[a-zA-Z_][a-zA-Z0-9_]*))\\.)?(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*(", 
+                "scope": []
+            }
+        ]
+    }, 
+    "objc": {
+        "exts": [
+            "m", 
+            "mm"
+        ], 
+        "symbols": [
+            {
+                "kind": "class", 
+                "regex": "^\\s*@interface[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[ \\t]+\\:", 
+                "scope": []
+            }, 
+            {
+                "kind": "category", 
+                "regex": "^\\s*@interface[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[ \\t]+\\((?:[a-zA-Z_][a-zA-Z0-9_]*)\\)", 
+                "scope": []
+            }, 
+            {
+                "kind": "implementation", 
+                "regex": "^\\s*@implementation[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[ \\t]+\\:", 
+                "scope": []
+            }, 
+            {
+                "kind": "category_implementation", 
+                "regex": "^\\s*@implementation[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[ \\t]+\\((?:[a-zA-Z_][a-zA-Z0-9_]*)\\)", 
+                "scope": []
+            }, 
+            {
+                "kind": "protocol", 
+                "regex": "^\\s*@protocol[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
+                "scope": []
+            }, 
+            {
+                "kind": "property", 
+                "regex": "^\\s*@property[^\\n]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*));", 
+                "scope": []
+            }, 
+            {
+                "kind": "method", 
+                "regex": "^-[[ \\t]+\\t]*(?P<names>[^\\n]+)[[ \\t]+\\t]*\\{", 
+                "scope": [
+                    "class", 
+                    "interface"
+                ]
+            }, 
+            {
+                "kind": "class_method", 
+                "regex": "^\\+[[ \\t]+\\t]*(?P<names>[^\\n]+)[[ \\t]+\\t]*\\{", 
+                "scope": [
+                    "implementation", 
+                    "category_implementation"
                 ]
             }
         ]
@@ -122,7 +253,19 @@
             }, 
             {
                 "kind": "function", 
-                "regex": "^\\s*def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
+                "regex": "^def[ \\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
+                "scope": []
+            }
+        ]
+    }, 
+    "r": {
+        "exts": [
+            "r"
+        ], 
+        "symbols": [
+            {
+                "kind": "function", 
+                "regex": "^(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[[ \\t]+\\t]*<-[[ \\t]+\\t]*function(", 
                 "scope": []
             }
         ]
