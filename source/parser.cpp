@@ -9,7 +9,7 @@ void Parser::parseFile() {
     size_t len = content.size();
     size_t lastLineStart = 0;
     size_t lastLineLength = 0;
-    long lineNumber = 0;
+    long lineNumber = 1;
     for (size_t i = 0; i < len; i++) {
         char c = content[i];
         
