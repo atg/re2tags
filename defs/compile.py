@@ -2,6 +2,7 @@ import json
 import os
 from ConfigParser import RawConfigParser
 import io
+import re
 
 def normalizeRegex(r):
     r = r.replace('IDENTS', r'(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\s*,\s*[a-zA-Z_][a-zA-Z0-9_]*)*)')
@@ -10,10 +11,10 @@ def normalizeRegex(r):
     r = r.replace('{{', '(?P<names>')
     r = r.replace('}}', ')')
     
-    r = r.replace(' +', r'[ \t]+')
-    r = r.replace(' ?', r'[ \t]?')
-    r = r.replace(' *', r'[ \t]*')
-    r = r.replace(' ',  r'[ \t]+')
+    r = r.replace(' +', r'[\x20\t]+')
+    r = r.replace(' ?', r'[\x20\t]?')
+    r = r.replace(' *', r'[\x20\t]*')
+    r = r.replace(' ',  r'[\x20\t]+')
     
     if not r.startswith('^'):
         r = r'^\s*' + r
@@ -42,10 +43,15 @@ for p in os.listdir('.'):
         for section in sections:
             scopes = rcp.get(section, "scope").strip().split(', ') if rcp.has_option(section, "scope") else []
             j["symbols"].append({
-                "kind": section,
+                "kind": section.partition("&")[0],
                 "regex": rcp.get(section, "regex"),
                 "scope": scopes,
             })
+            try:
+                if not re.compile(rcp.get(section, "regex")):
+                    raise Exception("Bad regex")
+            except Exception as e:
+                print '%s/%s Regex /%s/ is invalid: %s' % (os.path.splitext(p)[0], section, rcp.get(section, "regex"), e)
     
     for symbol in j["symbols"]:
         if "regex" in symbol and symbol["regex"]:

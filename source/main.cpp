@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
     rtt::tagsForFile("/Users/alexgordon/Temporary/re2tags/defs/compiled.json", "foo.py", str);//"class Foo\n\tdef bar():\n\t\tpass\n\n");
     
     for (rtt::Tag tag : tags) {
-        printf("Found [%s] %s%s\n", tag.kind.c_str(), tag.parents.c_str(), tag.name.c_str());
+        printf("[%s] %s%s\n", tag.kind.c_str(), tag.parents.c_str(), tag.name.c_str());
     }
     
     return 0;

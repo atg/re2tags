@@ -48,8 +48,8 @@ static void regexCallback(re2::StringPiece* groups, long ngroups, const re2::Str
     // Does it have a "name" group ?
     const std::map<std::string, int>& namedGroups = sym.regex()->NamedCapturingGroups();
     
-    if (namedGroups.count("parent")) {
-        int groupidx = namedGroups.find("parent")->second;
+    if (namedGroups.count("parents")) {
+        int groupidx = namedGroups.find("parents")->second;
         parentIdentifier = groups[groupidx].as_string();
     }
     

@@ -58,7 +58,7 @@ struct Manager {
     static Manager getManager(std::string path_to_definitions);
     Manager(std::string path_to_definitions);
     
-    Language detectLanguage(std::string path, std::string content);
+    Language detectLanguage(std::string path, std::string& content);
     
     void debug() {
         printf("MANAGER:\n");

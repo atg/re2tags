@@ -66,7 +66,7 @@ Manager::Manager(std::string path_to_definitions) : langs() {
         langs.push_back(lang);
     }
 }
-Language Manager::detectLanguage(std::string path, std::string content) {
+Language Manager::detectLanguage(std::string path, std::string& content) {
     
     for (Language& lang : langs) {
         for (std::string& ext : lang.extensions) {
