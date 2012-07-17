@@ -1,5 +1,8 @@
 #import "utils.hpp"
 
+#define strtk_no_tr1_or_boost
+#import "strtk.hpp"
+
 template<typename T>
 void fast_stack_malloc(const size_t n, void(^f)(T*)) {
 // Clang crashes on std::function, so until then we use macros
@@ -50,6 +53,21 @@ bool string_ends_with(std::string &haystack, std::string &needle) {
 }
 
 void split_and_trim_into(std::string str, std::string delim, std::vector<std::string>& into) {
-
-    into.push_back(str);
+    
+    std::deque<std::string> parts;
+    strtk::split_options::type split_options = strtk::split_options::default_mode;
+    
+    strtk::split(strtk::multiple_char_delimiter_predicate(delim),
+                 str,
+                 strtk::range_to_type_back_inserter(parts),
+                 split_options);
+    
+    for (std::string& neatlyTrimmedPart : parts) {
+        strtk::remove_leading_trailing(" \t\n\r\f", neatlyTrimmedPart);
+        
+        if (neatlyTrimmedPart.size())
+            into.push_back(neatlyTrimmedPart);
+    }
+    
+//    into.push_back(str);
 }

@@ -10,6 +10,8 @@ struct Tag {
     
     long indentation; // In spaces
     std::string lineContent; // Content of the line in which it was found
+    
+    long line;
 };
 
 }

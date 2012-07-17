@@ -3,49 +3,13 @@
 #import "utils.hpp"
 
 namespace rtt {
-
-    
-    static void regexCallback(re2::StringPiece* groups, long ngroups, const re2::StringPiece& piece, long lineLength, bool& shouldContinue, SymbolDef& sym, std::vector<std::string>& names) {
-        
-        //            [&](re2::StringPiece* groups) {
-        //        re2::StringPiece* groups = new re2::StringPiece[ngroups];
-        
-        // Just match on the line itself, it's faster
-        if (!sym.regex()->Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
-            //                delete[] groups;
-            //                continue;
-            shouldContinue = true;
-            return;
-        }
-        
-        // Does it have a "name" group ?
-        const std::map<std::string, int>& namedGroups = sym.regex()->NamedCapturingGroups();
-        if (namedGroups.count("name")) {
-            int groupidx = namedGroups.find("name")->second;
-            names.push_back(groups[groupidx].as_string());
-        }
-        else if (namedGroups.count("names")) {
-            int groupidx = namedGroups.find("names")->second;
-            std::string namesstring = groups[groupidx].as_string();
-            
-            split_and_trim_into(namesstring, std::string(","), names);
-        }
-        else {
-            //                delete[] groups;
-            //                continue;
-            shouldContinue = true;
-            return;
-            
-        }
-        //        });
-        //        delete[] groups;
-    }
     
 void Parser::parseFile() {
 
     size_t len = content.size();
     size_t lastLineStart = 0;
     size_t lastLineLength = 0;
+    long lineNumber = 0;
     for (size_t i = 0; i < len; i++) {
         char c = content[i];
         
@@ -55,7 +19,7 @@ void Parser::parseFile() {
         if (c == '\r' || c == '\n') {
             
             if (lastLineStart + lastLineLength <= len)
-                parseLine(lastLineStart, lastLineLength);
+                parseLine(lastLineStart, lastLineLength, lineNumber);
             
             lastLineStart = i + 1;
             lastLineLength = 0;
@@ -65,13 +29,48 @@ void Parser::parseFile() {
         }
     }
 }
-void Parser::parseLine(size_t lineOffset, size_t lineLength) {
+
+    
+// Clang crashes when either C++ lambdas or C blocks are used, so we have to resort to a function for the moment
+
+static void regexCallback(re2::StringPiece* groups, long ngroups, const re2::StringPiece& piece, long lineLength, bool& shouldContinue, SymbolDef& sym, std::vector<std::string>& names, std::string& parentIdentifier) {
+    
+    // Just match on the line itself, it's faster
+    if (!sym.regex()->Match(piece, 0, lineLength, RE2::UNANCHORED, groups, ngroups)) {
+        shouldContinue = true;
+        return;
+    }
+    
+    // Does it have a "name" group ?
+    const std::map<std::string, int>& namedGroups = sym.regex()->NamedCapturingGroups();
+    
+    if (namedGroups.count("parent")) {
+        int groupidx = namedGroups.find("parent")->second;
+        parentIdentifier = groups[groupidx].as_string();
+    }
+    
+    if (namedGroups.count("name")) {
+        int groupidx = namedGroups.find("name")->second;
+        names.push_back(groups[groupidx].as_string());
+    }
+    else if (namedGroups.count("names")) {
+        int groupidx = namedGroups.find("names")->second;
+        std::string namesstring = groups[groupidx].as_string();
+        
+        split_and_trim_into(namesstring, std::string(","), names);
+    }
+    else {
+        shouldContinue = true;
+        return;
+    }
+}
+
+void Parser::parseLine(size_t lineOffset, size_t lineLength, long lineNumber) {
     
     if (!lineLength)
         return;
-//    printf("[[%s]]\n", content.substr(lineOffset, lineLength).c_str());
+    
     // Find the indentation
-    size_t len = content.size();
     long indent = 0;
     for (size_t i = lineOffset; i < lineOffset + lineLength; i++) {
         char c = content[i];
@@ -85,6 +84,7 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
     
     Tag t;
     t.indentation = indent;
+    t.line = lineNumber;
     
     const re2::StringPiece piece = re2::StringPiece(content.c_str() + lineOffset, lineLength);
     
@@ -92,9 +92,11 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
         scopeStack.pop_back();
     }
     
-    __block std::vector<std::string> names;
+    std::string parentIdentifier;
+    std::vector<std::string> names;
     bool hadMatch = false;
-    for (__block SymbolDef& sym : language.symbols) {
+    for (SymbolDef& sym : language.symbols) {
+        
         // Check that the scope is specified
         if (sym.scoped.size()) {
             bool foundMatchingScope = false;
@@ -113,10 +115,8 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
                 continue;
         }
 
-        __block bool shouldContinue = false;
-//        RE2 r(sym.sourceRegex);
+        bool shouldContinue = false;
         int ngroups = sym.regex()->NumberOfCapturingGroups() + 1;
-        
         
         // 128 bytes is a reasonable amount to allocate on the stack
         const size_t bytes = sizeof(re2::StringPiece) * ngroups;
@@ -125,8 +125,7 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
             re2::StringPiece* p0 = (re2::StringPiece*)alloca(bytes);
             re2::StringPiece* p = new (p0) re2::StringPiece[ngroups];
             
-            
-            regexCallback(p, ngroups, piece, lineLength, shouldContinue, sym, names);
+            regexCallback(p, ngroups, piece, lineLength, shouldContinue, sym, names, parentIdentifier);
             
             for (size_t i = 0; i < ngroups; i++) {
                 p[i].~StringPiece();
@@ -135,11 +134,9 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
         else {
             // Too big! Put it on the heap
             re2::StringPiece* p = new re2::StringPiece[ngroups]; 
-            regexCallback(p, ngroups, piece, lineLength, shouldContinue, sym, names);
+            regexCallback(p, ngroups, piece, lineLength, shouldContinue, sym, names, parentIdentifier);
             delete[] p;
-        }
-//        fast_stack_malloc<re2::StringPiece>(ngroups, );
-        
+        }        
         
         
         if (shouldContinue || !names.size())
@@ -161,6 +158,19 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength) {
         t.parents.append("::");
         t.kindPath.append(part.kind);
         t.kindPath.append("::");
+    }
+    
+    if (parentIdentifier.size()) {
+        
+        std::vector<std::string> parentParts;
+        split_and_trim_into(parentIdentifier, ".:/\\", parentParts);
+        for (std::string parentPart : parentParts) {
+            t.parents.append(parentPart);
+            t.parents.append("::");
+            t.kindPath.append("misc");
+            t.kindPath.append("::");
+
+        }
     }
     
     for (std::string name : names) {
