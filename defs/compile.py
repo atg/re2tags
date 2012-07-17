@@ -54,7 +54,7 @@ for p in os.listdir('.'):
     definitions[os.path.splitext(p)[0]] = j
 
 minified = False
-with open('compiled.json', 'w') as f:
+with open('re2tags.json', 'w') as f:
     if minified:
         f.write(json.dumps(definitions, separators=(',',':')))
     else:

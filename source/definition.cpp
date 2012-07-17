@@ -69,15 +69,19 @@ Manager::Manager(std::string path_to_definitions) : langs() {
 Language Manager::detectLanguage(std::string path, std::string content) {
     
     for (Language& lang : langs) {
-//        lang.debug();
         for (std::string& ext : lang.extensions) {
             std::string dot_ext = std::string(".") + ext;
-//            printf("path = [%s]\n", path.c_str());
-//            printf("dot_ext = [%s]\n", dot_ext.c_str());
             if (string_ends_with(path, dot_ext))
                 return lang;
         }
     }
+    
+    for (Language& lang : langs) {
+        if (lang.name == path) {
+            return lang;
+        }
+    }
+    
     return Language();
 }
 
