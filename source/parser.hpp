@@ -22,7 +22,7 @@ struct Parser {
     Parser(Language& lang, std::string& contentString) : language(lang), content(contentString), tags(), scopeStack() { }
     
     void parseFile();
-    void parseLine(size_t lineOffset, size_t lineLength);
+    void parseLine(size_t lineOffset, size_t lineLength, long lineNumber);
     
     void produceTag(Tag t);
 };

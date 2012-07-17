@@ -350,6 +350,7 @@
 					"../dependencies/jsoncpp-src-0.5.0/include/json",
 					"../dependencies/jsoncpp-src-0.5.0/src/lib_json",
 					"../dependencies/jsoncpp-src-0.5.0/include",
+					../dependencies/strtk,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,6 +371,7 @@
 					"../dependencies/jsoncpp-src-0.5.0/include/json",
 					"../dependencies/jsoncpp-src-0.5.0/src/lib_json",
 					"../dependencies/jsoncpp-src-0.5.0/include",
+					../dependencies/strtk,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
