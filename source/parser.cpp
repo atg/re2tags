@@ -23,6 +23,10 @@ void Parser::parseFile() {
             
             lastLineStart = i + 1;
             lastLineLength = 0;
+            
+            char nextc = i + 1 < len ? content[i + 1] : 0;
+            if (c == '\n' || (c == '\r' && nextc != '\n'))
+                lineNumber++;
         }
         else {
             lastLineLength++;
