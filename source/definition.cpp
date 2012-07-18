@@ -42,6 +42,7 @@ Language::Language(Json::Value& j) : symbols(), name(), extensions() {
         SymbolDef symdef = SymbolDef(
             symbolj["kind"].asString(),
             symbolj["regex"].asString(),
+            long(symbolj["implicitindent"].asInt()),
             scoped
         );
         

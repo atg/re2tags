@@ -24,5 +24,7 @@ for p in os.listdir('.'):
         print os.path.join('tmp', p)
         actual = subprocess.check_output(['../xcode/build/Debug/re2tags', os.path.join('tmp', p)]).strip()
         if actual != spec:
-            print 'Found\n' + actual + '\n\n\n'
-
+            print '  Found\n' + actual + '\n'
+            print '  Expected\n' + spec + '\n\n\n'
+        else:
+            print '  All good (%d chars)' % len(actual)

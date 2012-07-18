@@ -52,6 +52,11 @@ bool string_ends_with(std::string &haystack, std::string &needle) {
     return 0 == haystack.compare(haystack.size() - needle.size(), needle.size(), needle);
 }
 
+std::string trim(std::string str) {
+    strtk::remove_leading_trailing(" \t\n\r\f", str);
+    return str;
+}
+
 void split_and_trim_into(std::string str, std::string delim, std::vector<std::string>& into) {
     
     std::deque<std::string> parts;

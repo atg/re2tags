@@ -7,6 +7,7 @@ import re
 def normalizeRegex(r):
     r = r.replace('IDENTS', r'(?:[a-zA-Z_][a-zA-Z0-9_]*(?:\s*,\s*[a-zA-Z_][a-zA-Z0-9_]*)*)')
     r = r.replace('IDENT', r'(?:[a-zA-Z_][a-zA-Z0-9_]*)')
+    r = r.replace('LISPATOM', r'[^\[\]\(\)\{\}"\s]+')
     
     r = r.replace('{{', '(?P<names>')
     r = r.replace('}}', ')')
@@ -42,9 +43,11 @@ for p in os.listdir('.'):
         j["exts"] = rcp.get("language", "exts").strip().split()
         for section in sections:
             scopes = rcp.get(section, "scope").strip().split(', ') if rcp.has_option(section, "scope") else []
+            implicitindent = int(rcp.get(section, "implicitindent").strip()) if rcp.has_option(section, "implicitindent") else 0
             j["symbols"].append({
                 "kind": section.partition("&")[0],
                 "regex": rcp.get(section, "regex"),
+                "implicitindent": implicitindent,
                 "scope": scopes,
             })
             try:
@@ -56,6 +59,8 @@ for p in os.listdir('.'):
     for symbol in j["symbols"]:
         if "regex" in symbol and symbol["regex"]:
             symbol["regex"] = normalizeRegex(symbol["regex"])
+        if "endregex" in symbol and symbol["endregex"]:
+            symbol["endregex"] = normalizeRegex(symbol["endregex"])
     
     definitions[os.path.splitext(p)[0]] = j
 

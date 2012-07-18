@@ -55,7 +55,8 @@ static void regexCallback(re2::StringPiece* groups, long ngroups, const re2::Str
     
     if (namedGroups.count("name")) {
         int groupidx = namedGroups.find("name")->second;
-        names.push_back(groups[groupidx].as_string());
+
+        names.push_back(trim(groups[groupidx].as_string()));
     }
     else if (namedGroups.count("names")) {
         int groupidx = namedGroups.find("names")->second;
@@ -92,6 +93,7 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength, long lineNumber) {
     
     const re2::StringPiece piece = re2::StringPiece(content.c_str() + lineOffset, lineLength);
     
+    std::deque<ScopePart> backupScopeStack = scopeStack;
     while (scopeStack.size() && scopeStack.back().indentation >= indent) {        
         scopeStack.pop_back();
     }
@@ -101,15 +103,26 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength, long lineNumber) {
     bool hadMatch = false;
     for (SymbolDef& sym : language.symbols) {
         
+        std::deque<ScopePart> _scopeStack;
+        std::deque<ScopePart>& scopeStackRef = scopeStack;
+        
+        if (sym.implicitindent) {
+            _scopeStack = backupScopeStack;
+            while (_scopeStack.size() && _scopeStack.back().indentation >= indent + sym.implicitindent) {        
+                _scopeStack.pop_back();
+            }
+            scopeStackRef = _scopeStack;
+        }
+        
         // Check that the scope is specified
         if (sym.scoped.size()) {
             bool foundMatchingScope = false;
             if (sym.scoped.front() == std::string("ROOT")) {
-                foundMatchingScope = scopeStack.size() == 0;
+                foundMatchingScope = scopeStackRef.size() == 0;
             }
-            else if (scopeStack.size()) {
+            else if (scopeStackRef.size()) {
                 for (std::string scope : sym.scoped) {
-                    if (scopeStack.back().kind == scope) {
+                    if (scopeStackRef.back().kind == scope) {
                         foundMatchingScope = true;
                         break;
                     }
@@ -147,13 +160,17 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength, long lineNumber) {
             continue;
         
         t.kind = sym.kind;
+        t.indentation += sym.implicitindent; // Simplest thing that could possibly work
+        scopeStack = scopeStackRef;
         
         hadMatch = true;
         break;
     }
     
-    if (!hadMatch)
+    if (!hadMatch) {
+        scopeStack = backupScopeStack;
         return;
+    }
     
     t.lineContent = content.substr(lineOffset, lineLength);
     
@@ -173,7 +190,6 @@ void Parser::parseLine(size_t lineOffset, size_t lineLength, long lineNumber) {
             t.parents.append("::");
             t.kindPath.append("misc");
             t.kindPath.append("::");
-
         }
     }
     

@@ -16,9 +16,10 @@ struct SymbolDef {
     std::vector<std::string> scoped;
     
     RE2* _regex;
+    long implicitindent;
     
     public:
-    SymbolDef(std::string k, std::string src, std::vector<std::string> scp) : kind(k), sourceRegex(src), scoped(scp), _regex(0) {
+    SymbolDef(std::string k, std::string src, long indent, std::vector<std::string> scp) : kind(k), sourceRegex(src), implicitindent(indent), scoped(scp), _regex(0) {
 //        regex();
     }
     
