@@ -6,8 +6,11 @@
 #include <fstream>
 #include <streambuf>
 
+#import "parseselector.hpp"
 
 int main(int argc, char *argv[]) {
+    
+//    printf("%s\n", selectorFromMethodDeclaration("- (T)abc:abc:(id)abc :(T)abc").c_str());
     
     if (argc < 2) {
         printf("No file specified.\n");

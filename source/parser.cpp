@@ -1,6 +1,7 @@
 #import "re2.h"
 #import "parser.hpp"
 #import "utils.hpp"
+#import "parseselector.hpp"
 
 namespace rtt {
     
@@ -63,6 +64,17 @@ static void regexCallback(re2::StringPiece* groups, long ngroups, const re2::Str
         std::string namesstring = groups[groupidx].as_string();
         
         split_and_trim_into(namesstring, std::string(","), names);
+    }
+    else if (namedGroups.count("selector")) {
+        int groupidx = namedGroups.find("selector")->second;
+        std::string selector = selectorFromMethodDeclaration(groups[groupidx].as_string());
+        if (selector.size()) {
+            names.push_back(selector);
+        }
+        else {
+            shouldContinue = true;
+            return;
+        }
     }
     else {
         shouldContinue = true;

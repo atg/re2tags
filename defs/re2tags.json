@@ -181,7 +181,7 @@
             }, 
             {
                 "implicitindent": 0, 
-                "kind": "implementation", 
+                "kind": "class_implementation", 
                 "regex": "^\\s*@implementation[\\x20\\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
@@ -203,19 +203,39 @@
             }, 
             {
                 "implicitindent": 1, 
-                "kind": "method", 
-                "regex": "^(?P<name>\\-[^\\n\\{\\;]+)[\\x20\\t]*\\{", 
+                "kind": "method_interface", 
+                "regex": "^(?P<name>\\-[^\\n\\{\\;]+)[\\x20\\t]*;", 
                 "scope": [
-                    "implementation", 
+                    "class", 
+                    "category", 
+                    "protocol"
+                ]
+            }, 
+            {
+                "implicitindent": 1, 
+                "kind": "class_method_interface", 
+                "regex": "^(?P<name>\\+[^\\n\\{\\;]+)[\\x20\\t]*;", 
+                "scope": [
+                    "class", 
+                    "category", 
+                    "protocol"
+                ]
+            }, 
+            {
+                "implicitindent": 1, 
+                "kind": "method", 
+                "regex": "^(?P<selector>\\-[^\\n\\{\\;]+)[\\x20\\t]*", 
+                "scope": [
+                    "class_implementation", 
                     "category_implementation"
                 ]
             }, 
             {
                 "implicitindent": 1, 
                 "kind": "class_method", 
-                "regex": "^(?P<name>\\+[^\\n\\{\\;]+)[\\x20\\t]*\\{", 
+                "regex": "^(?P<selector>\\+[^\\n\\{\\;]+)[\\x20\\t]*", 
                 "scope": [
-                    "implementation", 
+                    "class_implementation", 
                     "category_implementation"
                 ]
             }
