@@ -6,12 +6,12 @@
 [property] C3::toast
 [protocol] P4
 [property] P4::toast
-[implementation] C1
-[method] C1::- (void)doSomething:(id)x
-[class_method] C1::+ (void)doSomething:(id)x
+[class_implementation] C1
+[method] C1::-doSomething:
+[class_method] C1::+doSomething:
 [category_implementation] C2
-[method] C2::- (void)doSomething:(id)x
-[class_method] C2::+ (void)doSomething:(id)x
+[method] C2::-doSomething:
+[class_method] C2::+doSomething:
 %%%
 @interface C1 : SC1 {
 }

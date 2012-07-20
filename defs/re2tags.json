@@ -44,13 +44,21 @@
             {
                 "implicitindent": 0, 
                 "kind": "class", 
-                "regex": "^\\s*class[\\x20\\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
+                "regex": "^\\s*class[\\x20\\t]+((?P<parents>(?:[a-zA-Z_][a-zA-Z0-9_]*))\\.)?(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
                 "scope": []
             }, 
             {
                 "implicitindent": 0, 
                 "kind": "method", 
-                "regex": "^[\\x20\\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[\\x20\\t]*[:=][\\x20\\t]*(\\([^\\n)]*\\))?[\\x20\\t]*->$", 
+                "regex": "^[\\x20\\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[\\x20\\t]*[:=][\\x20\\t]*(\\([^\\n)]*\\))?[\\x20\\t]*->", 
+                "scope": [
+                    "class"
+                ]
+            }, 
+            {
+                "implicitindent": 0, 
+                "kind": "class_method", 
+                "regex": "^[\\x20\\t]+@(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[\\x20\\t]*[:=][\\x20\\t]*(\\([^\\n)]*\\))?[\\x20\\t]*->", 
                 "scope": [
                     "class"
                 ]
@@ -58,7 +66,7 @@
             {
                 "implicitindent": 0, 
                 "kind": "function", 
-                "regex": "^(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[\\x20\\t]*[:=][\\x20\\t]*(\\([^\\n)]*\\))?[\\x20\\t]*->$", 
+                "regex": "^(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))[\\x20\\t]*[:=][\\x20\\t]*(\\([^\\n)]*\\))?[\\x20\\t]*->", 
                 "scope": [
                     "ROOT"
                 ]
@@ -204,7 +212,7 @@
             {
                 "implicitindent": 1, 
                 "kind": "method_interface", 
-                "regex": "^(?P<name>\\-[^\\n\\{\\;]+)[\\x20\\t]*;", 
+                "regex": "^(?P<selector>\\-[^\\n\\{\\;]+)([\\x20\\t]+NS_[^\\n]+)?[\\x20\\t]*;", 
                 "scope": [
                     "class", 
                     "category", 
@@ -214,7 +222,7 @@
             {
                 "implicitindent": 1, 
                 "kind": "class_method_interface", 
-                "regex": "^(?P<name>\\+[^\\n\\{\\;]+)[\\x20\\t]*;", 
+                "regex": "^(?P<selector>\\+[^\\n\\{\\;]+)([\\x20\\t]+NS_[^\\n]+)?[\\x20\\t]*;", 
                 "scope": [
                     "class", 
                     "category", 
@@ -223,8 +231,8 @@
             }, 
             {
                 "implicitindent": 1, 
-                "kind": "method", 
-                "regex": "^(?P<name>\\-[^\\n\\{\\;]+)[\\x20\\t]*", 
+                "kind": "method_implementation", 
+                "regex": "^(?P<selector>\\-[^\\n\\{\\;]+)([\\x20\\t]+NS_[^\\n]+)?[\\x20\\t]*", 
                 "scope": [
                     "class_implementation", 
                     "category_implementation"
@@ -232,8 +240,8 @@
             }, 
             {
                 "implicitindent": 1, 
-                "kind": "class_method", 
-                "regex": "^(?P<name>\\+[^\\n\\{\\;]+)[\\x20\\t]*", 
+                "kind": "class_method_implementation", 
+                "regex": "^(?P<selector>\\+[^\\n\\{\\;]+)([\\x20\\t]+NS_[^\\n]+)?[\\x20\\t]*", 
                 "scope": [
                     "class_implementation", 
                     "category_implementation"
@@ -388,8 +396,16 @@
             }, 
             {
                 "implicitindent": 0, 
+                "kind": "class_method", 
+                "regex": "^\\s*def[\\x20\\t]+self\\.(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
+                "scope": [
+                    "class"
+                ]
+            }, 
+            {
+                "implicitindent": 0, 
                 "kind": "method", 
-                "regex": "^\\s*def[\\x20\\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*))", 
+                "regex": "^\\s*def[\\x20\\t]+(?P<names>(?:[a-zA-Z_][a-zA-Z0-9_]*)|[^\\s\\.\\;\\,\\(\\)\\[\\]\\}\\{]+)", 
                 "scope": [
                     "class"
                 ]
